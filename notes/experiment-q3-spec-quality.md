@@ -38,20 +38,20 @@ Quelle: OpenAI, "Introducing SWE-bench Verified", 13.08.2024 (aktualisiert 24.02
 
 ## 2. Quantitative Belege: Spec-Qualität beeinflusst den Erfolg
 
-1. **OpenAI Verified** (Link oben): Fallen schlecht spezifizierte und unfair getestete Tasks heraus, steigt GPT-4o von 16 % auf 33,2 %, auch innerhalb der Schwierigkeits-Buckets. Unterspezifikation und Testqualität sind dabei vermischt, der Effekt ist korrelativ.
-2. **SWE-Bench+** (Aleithan et al., https://arxiv.org/abs/2410.06992):
+1. OpenAI Verified (Link oben): Fallen schlecht spezifizierte und unfair getestete Tasks heraus, steigt GPT-4o von 16 % auf 33,2 %, auch innerhalb der Schwierigkeits-Buckets. Unterspezifikation und Testqualität sind dabei vermischt, der Effekt ist korrelativ.
+2. SWE-Bench+ (Aleithan et al., https://arxiv.org/abs/2410.06992):
    - Spec-*Überinformation* in Form von "solution leakage": Von 251 erfolgreichen Patches von SWE-Agent+GPT-4 fallen 82 (32,67 %) darunter, 31,08 % beruhen auf schwachen Tests.
    - Die Resolve-Rate fällt von 12,47 % auf 3,97 % (nach Filter). Zählt man nur korrekte Fixes, sind es 5,49 % (Abschnitt 2.2).
-   - Auf **Verified** haben 37 Instanzen Lösungs-Leaks. Von 112 gelösten Tasks (22,4 %) sind 55,36 % verdächtig, die Rate fällt dann auf 10,0 %.
+   - Auf Verified haben 37 Instanzen Lösungs-Leaks. Von 112 gelösten Tasks (22,4 %) sind 55,36 % verdächtig, die Rate fällt dann auf 10,0 %.
    - Auf SWE-bench+ (Issues nach dem Cutoff, ohne Leaks) erreicht SWE-Agent+GPT-4 noch 0,55 %, AutoCodeRover+GPT-4o 3,83 % (statt 18,83 % auf dem Leaderboard).
    - Fazit: Hinweise in der Spec treiben scheinbaren Erfolg stark.
-3. **Ambig-SWE** (Vijayvargiya, Zhou, Yerukola, Sap, Neubig; **[PP]**, ICLR 2026 nur selbst angegeben; https://arxiv.org/abs/2502.13069):
+3. Ambig-SWE (Vijayvargiya, Zhou, Yerukola, Sap, Neubig; [PP], ICLR 2026 nur selbst angegeben; https://arxiv.org/abs/2502.13069):
    - Ist eine unterspezifizierte Variante von Verified mit einem simulierten User, der die volle Spec kennt.
    - Interaktion verbessert die Leistung bei unterspezifizierten Inputs um "up to 74% over the non-interactive settings" (arXiv 2502.13069v3, Abstract S. 1, Einleitung S. 2): Je Modell sehr unterschiedlich. Ein deutlicher Abstand zu voll spezifizierten Issues bleibt.
    - Unterspezifikation erkennen: Nur Claude Sonnet 4 (89 %) und Claude Sonnet 3.5 (84 %) erreichen nennenswerte Genauigkeit.
    - Dateipfade als Hinweis helfen vor allem schwächeren Modellen. Qwen 3 Coder wird damit sogar schlechter.
    - Das passt zur Hypothese "Effekt größer für schwächere Harnesses", allerdings nur qualitativ.
-   - **Verifiziert: Resolve-Raten aus Figure 3** (Volltext-PDF v3, https://arxiv.org/pdf/2502.13069v3, S. 5). Die Werte habe ich aus dem Balkendiagramm abgelesen. Eine Tabelle mit diesen Zahlen gibt es im Paper nicht.
+   - Verifiziert: Resolve-Raten aus Figure 3 (Volltext-PDF v3, https://arxiv.org/pdf/2502.13069v3, S. 5). Die Werte habe ich aus dem Balkendiagramm abgelesen. Eine Tabelle mit diesen Zahlen gibt es im Paper nicht.
 
      | Modell | Hidden | Interaction | Full |
      |---|---|---|---|
@@ -66,12 +66,12 @@ Quelle: OpenAI, "Introducing SWE-bench Verified", 13.08.2024 (aktualisiert 24.02
    - Statistik im Paper: Wilcoxon signed-rank (α = 0,05). Hidden vs. Interaction und Interaction vs. Full sind laut Text "significant for all evaluated models" (Table 4).
    - Anteil der Full-Leistung, der durch Interaktion zurückgewonnen wird: Sonnet 3.5 und Haiku "up to 80%", Deepseek 59 %, Llama 3.1 54 %, Sonnet 4 89 %.
    - Inkonsistenz im Paper: Abschnitt 5 nennt "46% vs 41.8%" für Qwen 3 Coder und Sonnet 4 und verweist dabei auf Figure 3. Diese Werte passen nicht zu den Balken. Für Figure 3 als Quelle zitieren und den Widerspruch vermerken.
-4. **Original SWE-bench** (Jimenez et al., ICLR 2024, Volltext v3 https://arxiv.org/pdf/2310.06770v3), **verifiziert:**
+4. Original SWE-bench (Jimenez et al., ICLR 2024, Volltext v3 https://arxiv.org/pdf/2310.06770v3), verifiziert:
    - "Using a BM25 retriever, Claude 2 is only able to resolve 1.96% of the issues."
    - Table 5 (BM25, volles SWE-bench): Claude 3 Opus 3,79 %, Claude 2 1,97 %, GPT-4-turbo 1,31 %, ChatGPT-3.5 0,17 %.
-   - Mit Lokalisierungsinformation im Oracle-Setting (die vom Gold-Patch editierten Dateien) steigt Claude 2 auf 4,80 % (Table 18) vs. 1,97 % BM25 (Table 5). Wörtlich: "Claude 2 scores at 2.2% compared to 4.8% in the main table for 'oracle' retrieval" (S. 7). Die 2,2 % gelten für das Setting, in dem ganze Dateien neu generiert werden statt Patches — nicht für eine Teilmengen-Analyse.
+   - Mit Lokalisierungsinformation im Oracle-Setting (die vom Gold-Patch editierten Dateien) steigt Claude 2 auf 4,80 % (Table 18) vs. 1,97 % BM25 (Table 5). Wörtlich: "Claude 2 scores at 2.2% compared to 4.8% in the main table for 'oracle' retrieval" (S. 7). Die 2,2 % gelten für das Setting, in dem ganze Dateien neu generiert werden statt Patches, nicht für eine Teilmengen-Analyse.
    - Das ist ein frühes Indiz dafür, dass Scope-Information (D3) wirkt. Es ist allerdings Kontext-Retrieval, keine Spec-Umformulierung.
-   - **BM25 (Table 5, S. 6) vs. Oracle (Table 18, S. 26)**, Primärquelle PDF v3:
+   - BM25 (Table 5, S. 6) vs. Oracle (Table 18, S. 26), Primärquelle PDF v3:
 
      | Modell | BM25 % Resolved | Oracle % Resolved |
      |---|---|---|
@@ -82,25 +82,25 @@ Quelle: OpenAI, "Introducing SWE-bench Verified", 13.08.2024 (aktualisiert 24.02
      | SWE-Llama 13b | 0,70 | 3,97 |
      | Claude 3 Opus | 3,79 | nicht berichtet |
 
-     \* Table 18 Fußnote: GPT-4 nur auf einem 25-%-Zufalls-Subset; zudem anderes Modell als Table 5 (GPT-4 vs. GPT-4-turbo) — Zeile nicht direkt vergleichbar.
-5. **ClarifyGPT** (Mu et al., arXiv 2310.10996), **verifiziert** (PDF; Pass@1 in %). Indirekter Beleg: Aufgaben auf Funktionsebene, nicht SWE-bench.
-   - **Table 3 (S. 14), simuliertes Feedback**, Durchschnitt: ChatGPT Default 58,55 → ClarifyGPT 67,22; GPT-4 Default 68,02 → ClarifyGPT 75,75.
-   - **Table 2 (S. 12), menschliches Feedback**, GPT-4 auf MBPP: Default 61,24 → ClarifyGPT (Human) 70,50.
-6. **OpenAI, "Why we no longer evaluate SWE-bench Verified"**, 23.02.2026, https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/, **verifiziert** (Volltext per Fetch):
+     \* Table 18 Fußnote: GPT-4 nur auf einem 25-%-Zufalls-Subset; zudem anderes Modell als Table 5 (GPT-4 vs. GPT-4-turbo), Zeile nicht direkt vergleichbar.
+5. ClarifyGPT (Mu et al., FSE 2024, Proc. ACM Softw. Eng. 1(FSE), S. 2332–2354, DOI 10.1145/3660810; arXiv 2310.10996; [PR]), verifiziert (PDF und Crossref; Pass@1 in %). Indirekter Beleg: Aufgaben auf Funktionsebene, nicht SWE-bench.
+   - Table 3 (S. 14), simuliertes Feedback, Durchschnitt: ChatGPT von 58,55 (Default) auf 67,22 (ClarifyGPT); GPT-4 von 68,02 auf 75,75.
+   - Table 2 (S. 12), menschliches Feedback, GPT-4: Durchschnitt über MBPP-sanitized und MBPP-ET von 61,24 (Default) auf 70,50 (ClarifyGPT Human); einzeln MBPP-sanitized 70,96 auf 80,80, MBPP-ET 51,52 auf 60,19.
+6. OpenAI, "Why we no longer evaluate SWE-bench Verified", 23.02.2026, https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/, verifiziert (Volltext per Fetch):
    - Audit von 138 Verified-Problemen, die o3 "did not consistently solve over 64 independent runs". Jedes wurde von mindestens sechs Engineers geprüft.
    - "59.4% of the 138 problems contained material issues in test design and/or problem description". Davon 35,5 % narrow tests, 18,8 % wide tests (Tests prüfen nicht spezifizierte Zusatzfunktionalität), 5,1 % Sonstiges.
    - Beispiele: `pylint-dev__pylint-4551` (Test importiert `get_annotation`, das in der Issue nicht genannt ist) und `sympy__sympy-18199` (Beschreibung deckt nur 1 von 3 Issues ab).
    - Contamination: "all frontier models we tested were able to reproduce the original, human-written bug fix ... or verbatim problem statement specifics for certain tasks".
    - "models that have seen the problems during training are more likely to succeed, because they have additional information needed to pass the underspecified tests."
    - Zahlen zu dieser Erfolgssteigerung nennt OpenAI nicht. Einzelfall: GPT-5.2 löste 31 als "almost impossible" eingestufte Tasks.
-   - SOTA auf Verified: 74,9 % → 80,9 % in 6 Monaten. OpenAI empfiehlt SWE-bench Pro.
-   - **Konsequenz für Q3:** Den Effekt von S1 vs. S0 kann Memorization verdecken. Eine Contamination-Probe und ein Post-Cutoff- bzw. Pro-Kontrollset werden damit Pflicht.
-7. **UTBoost** (Yu, Zhu, He, Kang; ACL 2025, S. 3762–3774; https://aclanthology.org/2025.acl-long.189/, arXiv 2506.09289), **verifiziert** (Abstract und Anthology-Metadaten, Volltextausschnitt):
+   - SOTA auf Verified: von 74,9 % auf 80,9 % in 6 Monaten. OpenAI empfiehlt SWE-bench Pro.
+   - Konsequenz für Q3: Den Effekt von S1 vs. S0 kann Memorization verdecken. Eine Contamination-Probe und ein Post-Cutoff- bzw. Pro-Kontrollset werden damit Pflicht.
+7. UTBoost (Yu, Zhu, He, Kang; ACL 2025, S. 3762–3774; https://aclanthology.org/2025.acl-long.189/, arXiv 2506.09289), verifiziert (Abstract und Anthology-Metadaten, Volltextausschnitt):
    - "we identified 36 task instances with insufficient test cases and uncovered 345 erroneous patches incorrectly labeled as passed".
    - Die Korrekturen betreffen "40.9% of SWE-Bench Lite and 24.4% of SWE-Bench Verified leaderboard entries", mit 18 bzw. 11 Rangänderungen (Verified: 11/45 Einträge).
-   - S. 2 (Einleitung), wörtlich: "5.2% (26/500) of instances in SWE-Bench Verified have insufficient test cases" (Lite: 7,7 % / 23/300). Die 26+23 = 49 decken sich nicht direkt mit den "36 task instances" im Abstract; eine Erklärung steht nicht im Text (mögliche Überschneidung Lite/Verified ist Vermutung, nicht belegt).
+   - S. 2 (Einleitung), wörtlich: "5.2% (26/500) of instances in SWE-Bench Verified have insufficient test cases" (Lite: 7,7 % / 23/300). §4.2 (S. 6) löst die "36 task instances" des Abstracts auf: "Of these, 23 instances are from SWE-Bench Lite, and 26 are from SWE-Bench Verified." 23 + 26 − 36 = 13 Instanzen liegen in beiden Splits.
    - Korrektur zu lit_issue2_3.md: Die Autoren sind Boxi Yu et al., nicht "Boshi Wang". Zitiert werden sollte die ACL-Version, nicht der Substack-Blog.
-   - **Konsequenz für Q3:** Die False-success-Messung sollte UTBoost-augmentierte Tests (HF-Datensatz) als zweiten Grader nutzen.
+   - Konsequenz für Q3: Die False-success-Messung sollte UTBoost-augmentierte Tests (HF-Datensatz) als zweiten Grader nutzen.
 
 Lücke: Mir ist keine Studie bekannt, die *dieselben* Verified-Issues kontrolliert verschlechtert **und** anreichert (S1/S2) und dabei false-success und Kosten misst. Ambig-SWE deckt nur die Verschlechterung ab. Genau dort liegt der Beitrag von Q3.
 
@@ -180,22 +180,19 @@ Bedingungen:
 - Spaltennamen der OpenAI-Annotations-CSV.
 - Ambig-SWE: Resolve-Raten nur aus Fig. 3 abgelesen (keine Tabelle); Herkunft von "41.8%" ungeklärt; Abgleich mit v1/v2 steht aus.
 - SWE-bench: kein Oracle-Wert für Claude 3 Opus; GPT-4 fehlt als BM25 auf dem vollen Testset in Table 5 (dort nur GPT-4-turbo).
-- UTBoost: Abweichung 36 Instanzen (Abstract) vs. 23+26 (S. 2) im Text nicht aufgelöst.
 
 ## Quellenprüfung (2026-10-15)
 
 Verifiziert (Technical Scholar, Primärquellen-PDF mit Seiten-/Tabellenangabe, 15.10.2026):
-- OpenAI 38,3 / 61,1 / 68,3 %: wörtlich im Post (Volltext) und im archive.org-Snapshot. Tag **[VC]** (Herstellerangabe zum eigenen Benchmark).
-- OpenAI "Why we no longer evaluate SWE-bench Verified" (23.02.2026): Volltext gelesen ([VC]). Folge: Contamination-Probe mit Post-Cutoff- bzw. SWE-bench-Pro-Kontrollset ist **Pflicht**.
-- **Ambig-SWE** (2502.13069v3): wörtlich "up to 74% over the non-interactive settings" (S. 1–2); [PP], ICLR 2026 nur selbst angegeben.
-  - Tabellen 1, 2, 4 und 6 zahl für zahl aus dem PDF übernommen (S. 6, 7, 18, 19).
-  - Resolve-Raten Hidden / Interaction / Full nur in **Fig. 3 (S. 5)**; aus Balkenbeschriftungen abgelesen (Llama 3.1 70B 3,2/4,8/8,8; Deepseek-v2 5,6/7,2/12,2; Haiku 3.5 15,4/26,8/33,8; Sonnet 3.5 24,2/39,6/49,4; Qwen 3 Coder 45,6/53,8/64,6; Sonnet 4 40,0/61,4/68,0; Sonnet 4 Hidden nur 100/500).
-  - **Inkonsistenz offen ausgewiesen:** §5 (S. 8) nennt "46% vs 41.8%" (Qwen vs. Sonnet 4) mit Verweis auf Fig. 3. Das Paar kommt in Fig. 3 nicht vor (Interaction: Qwen 53,8 / Sonnet 4 61,4; Hidden: Qwen 45,6 ≈ 46 / Sonnet 4 40,0; 41,8 nirgends; Table 1 ebenfalls nicht). Erklärung fehlt im Paper. Für Zitate: Fig. 3, Widerspruch vermerken.
-- **SWE-bench** (2310.06770v3): BM25 Table 5 (S. 6) vs. Oracle Table 18 (S. 26) für Claude 2, ChatGPT-3.5, GPT-4/GPT-4-turbo, SWE-Llama 7b/13b, Claude 3 Opus (BM25 only) — siehe Tabelle oben. Caveats: GPT-4 Oracle nur 25-%-Subset und anderes Modell als Table 5; Claude 3 Opus ohne Oracle; 2,2 % (S. 7) = Whole-File-Generation, nicht Teilmenge.
-- **UTBoost** (arXiv 2506.09289): S. 2 wörtlich 5,2 % (26/500) Verified und 7,7 % (23/300) Lite mit unzureichenden Tests; Parser-Annotationfehler 54,2 % (271/500) Verified bzw. 54,6 % (164/300) Lite. **Pflicht** als zweiter False-success-Grader. Abstract-Zahl "36" bleibt ungeklärt (s. Offen).
-- **ClarifyGPT** (2310.10996): Table 3 (S. 14) Sim-Feedback und Table 2 (S. 12) Human-Feedback geprüft. Nur **indirekter** Beleg (Funktions-Level, nicht SWE-bench); kein Claim für Q3-Effektgröße.
+- OpenAI 38,3 / 61,1 / 68,3 %: wörtlich im Post (Volltext) und im archive.org-Snapshot. Tag [VC] (Herstellerangabe zum eigenen Benchmark).
+- OpenAI "Why we no longer evaluate SWE-bench Verified" (23.02.2026): Volltext gelesen ([VC]). Folge: Contamination-Probe mit Post-Cutoff- bzw. SWE-bench-Pro-Kontrollset ist Pflicht.
+- Ambig-SWE (2502.13069v3): wörtlich "up to 74% over the non-interactive settings" (S. 1–2); [PP], ICLR 2026 nur selbst angegeben.
+  - Resolve-Raten Hidden / Interaction / Full nur in Fig. 3 (S. 5); aus Balkenbeschriftungen abgelesen (Llama 3.1 70B 3,2/4,8/8,8; Deepseek-v2 5,6/7,2/12,2; Haiku 3.5 15,4/26,8/33,8; Sonnet 3.5 24,2/39,6/49,4; Qwen 3 Coder 45,6/53,8/64,6; Sonnet 4 40,0/61,4/68,0; Sonnet 4 Hidden nur 100/500).
+  - Inkonsistenz offen ausgewiesen: §5 (S. 8) nennt "46% vs 41.8%" (Qwen vs. Sonnet 4) mit Verweis auf Fig. 3. Das Paar kommt in Fig. 3 nicht vor (Interaction: Qwen 53,8 / Sonnet 4 61,4; Hidden: Qwen 45,6 ≈ 46 / Sonnet 4 40,0; 41,8 nirgends; Table 1 ebenfalls nicht). Erklärung fehlt im Paper. Für Zitate: Fig. 3, Widerspruch vermerken.
+- SWE-bench (2310.06770v3): BM25 Table 5 (S. 6) vs. Oracle Table 18 (S. 26) für Claude 2, ChatGPT-3.5, GPT-4/GPT-4-turbo, SWE-Llama 7b/13b, Claude 3 Opus (BM25 only), siehe Tabelle oben. Caveats: GPT-4 Oracle nur 25-%-Subset und anderes Modell als Table 5; Claude 3 Opus ohne Oracle; 2,2 % (S. 7) = Whole-File-Generation, nicht Teilmenge.
+- UTBoost (arXiv 2506.09289): S. 2 wörtlich 5,2 % (26/500) Verified und 7,7 % (23/300) Lite mit unzureichenden Tests; Parser-Annotationfehler 54,2 % (271/500) Verified bzw. 54,6 % (164/300) Lite. Pflicht als zweiter False-success-Grader. Abstract-Zahl 36 = 23 Lite + 26 Verified mit 13 Überschneidungen (§4.2).
+- ClarifyGPT (FSE 2024, DOI 10.1145/3660810, [PR]): Table 3 (S. 14) Sim-Feedback und Table 2 (S. 12) Human-Feedback geprüft; 61,24 auf 70,50 ist der Mittelwert aus MBPP-sanitized und MBPP-ET. Nur indirekter Beleg (Funktions-Level, nicht SWE-bench); kein Claim für Q3-Effektgröße.
 
 Noch offen:
 - Ambig-SWE: Fig.-3-Werte nur grafisch abgelesen; Herkunft von "41.8%" ungeklärt; v1/v2-Abgleich ausstehend.
 - SWE-bench: Claude 3 Opus ohne Oracle; GPT-4 BM25 auf vollem Set fehlt in Table 5.
-- UTBoost: 36 (Abstract) vs. 23+26 (S. 2) im Text nicht aufgelöst.
