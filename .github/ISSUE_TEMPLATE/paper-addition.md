@@ -18,6 +18,7 @@ labels: paper-addition
 ## Proposed evidence class
 
 - [ ] [PR] peer-reviewed (venue listing verified)
+- [ ] [PUB] published, review type unverified
 - [ ] [PP] preprint
 - [ ] [VC] vendor claim
 - [ ] [EE] engineering experience

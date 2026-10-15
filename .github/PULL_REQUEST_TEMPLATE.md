@@ -12,7 +12,7 @@
 - [ ] Every new or changed claim cites a source, and every cited key exists in `references.bib`.
 - [ ] Every new BibTeX entry has a row in `references-verification.md` saying how and when it was verified against the primary record.
 - [ ] Peer-reviewed status was confirmed on the venue's own listing or publisher record, not inferred from an arXiv comment.
-- [ ] Every claim carries an evidence tag: [PR], [PP], [VC], [EE], or [OP].
+- [ ] Every claim carries an evidence tag: [PR], [PUB], [PP], [VC], [EE], or [OP].
 - [ ] Our own terms, frameworks, and hypotheses are marked [OP] and are not presented as findings.
 - [ ] Numbers are quoted with their setup (benchmark, split, model; budget and date where relevant).
 - [ ] Dates were checked; nothing is called "latest" or "state of the art" without a dated check.

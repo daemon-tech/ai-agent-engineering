@@ -9,11 +9,16 @@ All notable changes to the AAE Research Notebook. Dates are Europe/Berlin.
 - Repository published at https://github.com/daemon-tech/ai-agent-engineering (public).
 
 ### Changed
+- New evidence tag **[PUB]** (published, review type unverified), defined in README, METHODOLOGY and CONTRIBUTING and added to the issue/PR templates.
 - Venue corrections: AutoGen (`wu2023autogen`) is COLM 2024; tau-bench (`yao2024taubench`) is ICLR 2025. Both now tagged **[PR]** in the manuscript. MemGPT (`packer2023memgpt`) remains a preprint **[PP]**.
 - README, CONTRIBUTING and this changelog no longer describe the license as undecided or the repository as unpublished.
 
 ### Fixed
-- Missing evidence tag on `assalaarachchi2026agenticpm` (Chapter 01, layer L5): now **[PP]**, annotated "published, review type unverified" per METHODOLOGY §2.
+- Missing evidence tag on `assalaarachchi2026agenticpm` (Chapter 01, layer L5): now **[PUB]**.
+- `wu2023autogen` title corrected to the COLM 2024 title ("...via Multi-Agent Conversations").
+- `assalaarachchi2026agenticpm` bib entry: venue AGENT '26 (ACM), pp. 157–164, verified via Crossref.
+- `hassan2026icse` bib entry: venue corrected to ICSE-Companion '26 per Crossref; tagged **[PUB]** in Chapters 00 and 02.
+- "How to cite" now names v0.1.1.
 
 ## [0.1.0], 2026-10-14
 

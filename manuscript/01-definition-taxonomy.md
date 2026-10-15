@@ -63,7 +63,7 @@ flowchart TB
 | **L2 Harness** | Loop, action space, tool interfaces, context construction, memory, permissions | Agent-computer interface [@yang2024sweagent] **[PR]**; MemGPT memory tiers [@packer2023memgpt] **[PP]**; MCP [@mcp2026spec] **[VC]** |
 | **L3 Coordination** | Multiple agents, roles, communication, shared artefacts | ChatDev [@qian2024chatdev] **[PR]**; MetaGPT [@hong2024metagpt] **[PR]**; AutoGen [@wu2023autogen] **[PR]** |
 | **L4 Oversight and delegation** | Where humans approve, review, or intervene; evidence handed to humans | ACE/AEE workbenches proposed in [@hassan2025agenticse] **[PP]**; practitioner decision logs [@tan2026pstack] **[EE]** |
-| **L5 Organisation and governance** | Team processes, accountability, policy, regulation | Agentic project-management vision [@assalaarachchi2026agenticpm] **[PP]** (published, review type unverified) |
+| **L5 Organisation and governance** | Team processes, accountability, policy, regulation | Agentic project-management vision [@assalaarachchi2026agenticpm] **[PUB]** |
 
 The layering is a proposal. Its claim is that design decisions at each layer can be studied somewhat independently, and that a reported result should state the configuration of every layer.
 

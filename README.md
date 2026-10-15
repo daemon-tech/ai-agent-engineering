@@ -36,7 +36,8 @@ Every substantive claim carries one of these tags. Full definitions are in [METH
 | Tag | Class | Meaning |
 |---|---|---|
 | **[PR]** | Peer-reviewed | Published at a peer-reviewed venue that we verified (proceedings page, publisher DOI, or journal page). |
-| **[PP]** | Preprint | Available on arXiv or similar, with no verified peer-reviewed publication. |
+| **[PUB]** | Published, review type unverified | In proceedings or a journal (verified DOI/publisher record), but we could not verify that it was peer reviewed (e.g. companion or workshop items). |
+| **[PP]** | Preprint | Available on arXiv or similar, with no verified publication. |
 | **[VC]** | Vendor claim | Stated by a company about its own product, benchmark, or practice. |
 | **[EE]** | Engineering experience | Practitioner reports, tooling, and documentation that describe practice without controlled evaluation. |
 | **[OP]** | Our proposal or hypothesis | Terms, definitions, taxonomies, conjectures, and frameworks introduced in this notebook. |
@@ -51,4 +52,4 @@ Third-party material quoted here (short attributed quotations only) remains unde
 
 ## How to cite
 
-Until a versioned release exists, cite as: *0xDaemon et al., "AAE Research Notebook", v0.1, 2026-10-14, not peer reviewed.* A `CITATION.cff` is still to be added.
+Until a versioned release exists, cite as: *0xDaemon et al., "AAE Research Notebook", v0.1.1, 2026-10-15, not peer reviewed.* A `CITATION.cff` is still to be added.

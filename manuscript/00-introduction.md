@@ -50,7 +50,7 @@ Additional lines address feedback and search. Reflexion stores verbal self-refle
 
 Software engineering became a major testbed for agents because repositories provide executable feedback. SWE-bench framed the task as producing a patch that makes hidden fail-to-pass tests pass [@jimenez2024swebench] **[PR]**. SWE-agent introduced the *agent-computer interface* (ACI) and showed with ablations that interface design (search, file viewing, editing with a linter guardrail, history handling) changed resolve rates substantially [@yang2024sweagent] **[PR]**. AutoCodeRover combined LLMs with program-structure-aware code search [@zhang2024autocoderover] **[PR]**. OpenHands provided an open platform for software-developer agents [@wang2025openhands] **[PR]**. Agentless questioned whether autonomous agents are needed at all, using a fixed localise-repair-validate pipeline [@xia2025agentless] **[PR]**. Multi-agent "virtual software company" designs such as ChatDev and MetaGPT assigned roles to communicating agents [@qian2024chatdev] **[PR]**, [@hong2024metagpt] **[PR]**.
 
-The software engineering community has begun to frame the agentic shift at the discipline level. Hassan et al. proposed "SE 3.0", an AI-native, intent-centric vision of software engineering [@hassan2026se3] **[PR]**, and a roadmap for *Agentic Software Engineering* that distinguishes "SE for Humans" from "SE for Agents" [@hassan2025agenticse] **[PP]**, also published as a two-page ICSE 2026 item [@hassan2026icse]. Hou et al.'s systematic literature review maps LLM use across SE tasks more broadly [@hou2024llm4se] **[PR]**. Chapter 02 covers this in detail.
+The software engineering community has begun to frame the agentic shift at the discipline level. Hassan et al. proposed "SE 3.0", an AI-native, intent-centric vision of software engineering [@hassan2026se3] **[PR]**, and a roadmap for *Agentic Software Engineering* that distinguishes "SE for Humans" from "SE for Agents" [@hassan2025agenticse] **[PP]**, also published as a two-page ICSE 2026 item [@hassan2026icse] **[PUB]**. Hou et al.'s systematic literature review maps LLM use across SE tasks more broadly [@hou2024llm4se] **[PR]**. Chapter 02 covers this in detail.
 
 ### 2.4 Practice ahead of evidence
 
@@ -85,7 +85,7 @@ The **environment** is everything the agent acts upon: a repository, a shell, a 
 The notebook is a structured narrative review, not a systematic review. Its method, given in full in [METHODOLOGY.md](../METHODOLOGY.md), rests on four rules:
 
 1. **Primary-source verification.** Every bibliographic field comes from the primary record. Peer-reviewed status was confirmed on the venue's own proceedings page or the publisher DOI, not from author comments. On 2026-10-14, OpenReview blocked automated access, so ICLR acceptances were confirmed through `proceedings.iclr.cc` and `iclr.cc/virtual`.
-2. **Evidence classes** [PR], [PP], [VC], [EE], [OP] on every substantive claim.
+2. **Evidence classes** [PR], [PUB], [PP], [VC], [EE], [OP] on every substantive claim.
 3. **Numbers with setup.** Every quoted number gives at least the benchmark split and model.
 4. **Dated frontier reviews.** Recent work is recorded with publication date, review date, mechanism, verification status, and limits ([frontier/](../frontier/)).
 
