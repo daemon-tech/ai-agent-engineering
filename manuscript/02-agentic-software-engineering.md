@@ -131,7 +131,7 @@ Coding agents act on file systems, shells, networks, and credentials. Three Octo
 
 ## 9. Open problems specific to ASE
 
-1. **Specification quality.** How much of agent failure is attributable to underspecified tasks rather than agent capability? The SWE-bench Verified annotations suggest a lot, for that benchmark [@chowdhury2024sweverified] **[VC]**.
+1. **Specification quality.** How much of agent failure is attributable to underspecified tasks rather than agent capability? For SWE-bench, OpenAI's annotation flagged 38.3% of sampled tasks for underspecified problem statements [@chowdhury2024sweverified] **[VC]**; how much of agent failure this explains is not measured.
 2. **Verification beyond the test suite.** How can agents discover failures that existing tests do not cover? [@yao2026sweeper] **[PP]**
 3. **Hand-off evidence.** What evidence lets a reviewer trust a change quickly and correctly? Almost no controlled studies exist.
 4. **Long-horizon and cumulative effects.** Do agent-written changes accumulate debt? Early evidence points to inherited test failures [@pan2026maintain] **[PP]**.
