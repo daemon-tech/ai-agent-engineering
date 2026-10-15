@@ -184,7 +184,7 @@ Bedingungen:
 
 ## Quellenprüfung (2026-10-15)
 
-Verifiziert (Technical Scholar, Primärquellen PDF mit Seiten-/Tabellenangabe; Stand `/workspace/aae/q3-pruefpunkte.md`):
+Verifiziert (Technical Scholar, Primärquellen-PDF mit Seiten-/Tabellenangabe, 15.10.2026):
 - OpenAI 38,3 / 61,1 / 68,3 %: wörtlich im Post (Volltext) und im archive.org-Snapshot. Tag **[VC]** (Herstellerangabe zum eigenen Benchmark).
 - OpenAI "Why we no longer evaluate SWE-bench Verified" (23.02.2026): Volltext gelesen ([VC]). Folge: Contamination-Probe mit Post-Cutoff- bzw. SWE-bench-Pro-Kontrollset ist **Pflicht**.
 - **Ambig-SWE** (2502.13069v3): wörtlich "up to 74% over the non-interactive settings" (S. 1–2); [PP], ICLR 2026 nur selbst angegeben.
