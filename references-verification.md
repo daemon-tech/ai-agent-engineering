@@ -4,7 +4,7 @@ Every entry in `references.bib` was verified on **2026-10-14** against the prima
 
 | # | Key | Class | Primary record | What was checked |
 |---|---|---|---|---|
-| 1 | `wooldridge1995intelligent` | PR | https://doi.org/10.1017/S0269888900008122 | Crossref DOI record: title, authors, KER 10(2):115–152, 1995 |
+| 1 | `wooldridge1995intelligent` | PR | https://doi.org/10.1017/S0269888900008122 | Crossref DOI record: title, authors, KER 10(2):115–152, 1995; Crossref metadata re-checked 2026-10-15 (full text paywalled, content not re-checked) (#7 baseline) |
 | 2 | `wei2022chain` | PR | https://proceedings.neurips.cc/paper_files/paper/2022/hash/9d5609613524ecf4f15af0f7b31abca4-Abstract-Conference.html | NeurIPS 2022 proceedings index; arXiv 2201.11903 metadata |
 | 3 | `zhou2023leasttomost` | PR | https://iclr.cc/virtual/2023/poster/12263 | ICLR 2023 virtual paper list; arXiv 2205.10625 metadata |
 | 4 | `yao2023react` | PR | https://iclr.cc/virtual/2023/poster/11003 | ICLR 2023 virtual paper list; arXiv 2210.03629v3 metadata and PDF |

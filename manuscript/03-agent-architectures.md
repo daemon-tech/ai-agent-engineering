@@ -281,7 +281,7 @@ This reference architecture is a synthesis, not a validated design. Each box cor
 1. **Benchmark monoculture.** Much architectural evidence comes from SWE-bench variants, whose validity is contested (Chapter 02, §6).
 2. **Model drift.** Architectural findings measured with 2022–2024 models (PaLM-540B, GPT-4 Turbo, Claude 3 Opus) may not hold for later models. Cortex's observation that harness additions helped little under a stronger model is a single data point [@giampieri2026cortex] **[PP]**.
 3. **Confounded compute.** Architectures are rarely compared at equal cost.
-4. **Reliability under-reported.** Single-run success rates hide variance. pass^k-style metrics [@yao2024taubench] **[PR]** are rarely used in ASE papers.
+4. **Reliability under-reported.** Single-run success rates hide variance. pass^k-style metrics [@yao2024taubench] **[PR]** are, in our impression, rarely used in ASE papers; we have not counted this **[OP]**.
 5. **Practitioner knowledge is untested.** Many of the most widely used practices (sub-agent delegation, author–verifier separation, instruction files) come from engineering experience and lack controlled evaluation.
 
 ## References

@@ -75,7 +75,7 @@ The layering is a proposal. Its claim is that design decisions at each layer can
 4. **Verification**: establishing that a particular run's output meets the specification. This is distinct from evaluation.
 5. **Evaluation**: estimating how a configuration performs across a distribution of tasks. It includes benchmark design and benchmark auditing [@chen2026oracle] **[PP]**, [@ding2026reexec] **[PP]**.
 6. **Operation**: running agents over time, including monitoring, cost control, incident handling, and maintenance of the harness itself [@giampieri2026cortex] **[PP]**.
-7. **Governance**: permissions, security, auditability, and accountability [@liao2026skillrelay] **[PP]**, [@trong2026misbehavior] **[PP]**.
+7. **Governance**: permissions and security [@liao2026skillrelay] **[PP]**, [@trong2026misbehavior] **[PP]**.
 
 The distinction between **verification** (this output, now) and **evaluation** (this configuration, in general) is, we think, the most important one in the taxonomy **[OP]**. Much confusion in practice comes from treating a benchmark score as a verification of a particular change, or from treating one successful run as evidence about a configuration.
 
@@ -85,7 +85,7 @@ Domains differ in how strong and how available their verification signals are. W
 
 | Domain | Typical signals | Strength | Agent can obtain itself? |
 |---|---|---|---|
-| Software engineering (ASE) | compilers, type checkers, tests, linters, reproduction scripts, running the application | Medium to high, but tests can be weak or over-specific [@aleithan2024swebenchplus] **[PP]** | Often yes |
+| Software engineering (ASE) | compilers, type checkers, tests, linters, reproduction scripts, running the application | Medium to high, but tests can be weak [@aleithan2024swebenchplus] **[PP]** or over-specific [@chowdhury2024sweverified] **[VC]** | Often yes |
 | Data analysis | recomputation, invariants, cross-checks | Medium | Often yes |
 | Web and GUI tasks | page state, screenshots, task-specific checkers | Low to medium | Partially |
 | Customer-facing dialogue | policy rules, user satisfaction, database end state | Low to medium [@yao2024taubench] **[PR]** | Rarely |
