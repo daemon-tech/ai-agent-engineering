@@ -1,6 +1,6 @@
 # Issue #7: Runde-0-Baseline zur Claim-Qualität (AAE-Bot-Team)
-Stand: 2026-10-15 04:50 (Europe/Berlin), Repo daemon-tech/ai-agent-engineering, HEAD 436ec44, read-only geklont nach /workspace/aae-audit/repo.
-Seed: **20261015** (Python `random.seed`, `random.sample(..., 40)` über alle Claims mit Zitation). Skripte: /workspace/aae-audit/extract.py. CSV: /workspace/aae/issue7-baseline.csv
+Stand: 2026-10-15 04:50 (Europe/Berlin), Repo daemon-tech/ai-agent-engineering, HEAD 436ec44, read-only geklont.
+Seed: **20261015** (Python `random.seed`, `random.sample(..., 40)` über alle Claims mit Zitation). Skript: [issue7-extract.py](issue7-extract.py) (vom Repo-Root ausführen). CSV: [issue7-baseline.csv](issue7-baseline.csv)
 
 ## Grundgesamtheit
 - Gescannt: `manuscript/*.md` und `notes/2026-10-frontier-review.md`. Ein Verzeichnis `frontier/` gibt es nicht, der Frontier-Review liegt seit d44496c unter notes/.
