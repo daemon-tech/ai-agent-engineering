@@ -28,6 +28,14 @@ Two edge cases appear in v0.1:
 - **Published, review type unverified.** Two items appear in ACM proceedings (a two-page item in the ICSE-Companion '26 proceedings, pp. 22–23 and a paper in the proceedings of the 2026 International Workshop on Agentic Engineering, AGENT '26, pp. 157–164) where we verified the DOI and proceedings but not the track or review process. BibTeX marks them `published-review-type-unverified`; the text tags them **[PUB]** (since v0.1.1).
 - **Same work, different records.** When a preprint and a peer-reviewed version differ in title or authors (e.g., Agentless, Hassan et al.'s ASE roadmap), we cite the version we actually read and say so.
 
+### Citation format
+
+Every citation is written `[@key] **[TAG]**`: exactly one tag directly after each `[@key]`, where TAG is that key's class in `references-verification.md`. Several keys get one tag each, e.g. `[@a] **[PR]**, [@b] **[PP]**`. `python3 scripts/check_citations.py` enforces this.
+
+### Claims and open questions
+
+A claim is a manuscript statement with a source carrying an evidence tag. [OP] items are open questions, not claims (decision of the AAE Manuscript Editor, 2026-10-15).
+
 ### Evidence grading within a source
 
 The class is a property of the *source*. Inside a peer-reviewed paper, we still distinguish:

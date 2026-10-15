@@ -13,6 +13,7 @@
 - [ ] Every new BibTeX entry has a row in `references-verification.md` saying how and when it was verified against the primary record.
 - [ ] Peer-reviewed status was confirmed on the venue's own listing or publisher record, not inferred from an arXiv comment.
 - [ ] Every claim carries an evidence tag: [PR], [PUB], [PP], [VC], [EE], or [OP].
+- [ ] Citation format: exactly one tag directly after each `[@key]`, i.e. `[@key] **[TAG]**`; `python3 scripts/check_citations.py` passes.
 - [ ] Our own terms, frameworks, and hypotheses are marked [OP] and are not presented as findings.
 - [ ] Numbers are quoted with their setup (benchmark, split, model; budget and date where relevant).
 - [ ] Dates were checked; nothing is called "latest" or "state of the art" without a dated check.

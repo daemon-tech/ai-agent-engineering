@@ -8,3 +8,5 @@ Citation links per chapter and the share pointing to [PR] or [PUB] papers. Gener
 | 01-definition-taxonomy | 35 | 18 | 51% |
 | 02-agentic-software-engineering | 65 | 32 | 49% |
 | 03-agent-architectures | 56 | 32 | 57% |
+
+Uncited papers (in references.bib but not cited in manuscript/): `mu2024clarifygpt`
