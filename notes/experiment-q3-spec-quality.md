@@ -142,13 +142,13 @@ Bedingungen:
 - Stichprobe: **Ziel ~190 Paare** Verified-Instanzen, stratifiziert nach Repo und Schwierigkeits-Bucket, nur Instanzen mit Rubrik-Labels ≤ 1, fixer Seed.
 - **Power** (eigene Schätzung, Reviewer-Korrektur): Für Δ = 10 pp bei ~20 % diskordanten Paaren braucht McNemar (α = 0,05, Power 0,8) ~155 Paare, mit Holm ~190. Reichen die Verified-Kandidaten mit Labels ≤ 1 nicht, gilt bei 80–100 Paaren ehrlich eine **MDE von ~13–15 pp**.
 - **Tests:**
-  - **Primärvergleich (konfirmatorisch): S2 vs. S0**, McNemar. Sekundär: S1 vs. S0, Holm-korrigiert.
+  - **Primärvergleich (konfirmatorisch): S2 vs. S0**, McNemar; sekundär S1 vs. S0. Holm-Korrektur über beide Tests (familienweises α = 0,05), daher Ziel ~190 Paare.
   - Hauptmodell: Mixed-Effects-Logistik `resolved ~ condition * harness + (1|instance) + (1|repo)`.
   - Cluster-Bootstrap über Instanzen (10.000 Resamples) für 95 %-CIs von Δ-Resolve und Kosten.
   - Effektgröße: Odds Ratio und Δ in pp.
 - **Pre-Registration** im Notebook vor dem ersten Lauf, festgeschrieben:
   - Hypothesen; primäre Metrik Resolve-Rate; Ausschlussregeln.
-  - Primärvergleich S2 vs. S0 (McNemar, α = 0,05); sekundär S1 vs. S0 (Holm).
+  - Primärvergleich S2 vs. S0, sekundär S1 vs. S0, beide McNemar mit Holm-Korrektur über beide Tests (familienweises α = 0,05).
   - Analyseplan: Mixed-Effects-Logistik `resolved ~ condition * harness + (1|instance) + (1|repo)`, Cluster-Bootstrap-CIs (10.000), OR und Δ pp.
   - Stichprobe/MDE: Ziel ~190 Paare (Δ 10 pp); bei 80–100 Paaren MDE ~13–15 pp.
   - Pflicht: Contamination-Probe (Post-Cutoff/SWE-bench Pro) und UTBoost als zweiter Grader.
