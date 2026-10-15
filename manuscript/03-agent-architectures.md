@@ -208,7 +208,7 @@ flowchart LR
 | Topology | Coordination mechanism | Source |
 |---|---|---|
 | **Role pipeline** | Fixed sequence of role-specialised agents; artefacts passed along a chain | ChatDev's chat chain [@qian2024chatdev] **[PR]**; MetaGPT's SOP-encoded assembly line [@hong2024metagpt] **[PR]** |
-| **Conversational** | Agents exchange messages under programmable conversation patterns, optionally with humans | AutoGen [@wu2023autogen] **[PP]** |
+| **Conversational** | Agents exchange messages under programmable conversation patterns, optionally with humans | AutoGen [@wu2023autogen] **[PR]** |
 | **Orchestrator–workers** | A coordinator decomposes dynamically, delegates, and synthesises | [@anthropic2024effective] **[VC]**; pstack's orchestrate and swarm playbooks [@tan2026pstack] **[EE]** |
 | **Parallel sampling or voting** | Independent attempts aggregated by tests, judges, or votes | [@anthropic2024effective] **[VC]**; best-of-$n$ with verifiers [@pan2025swegym] **[PR]** |
 | **Author–verifier separation** | The agent that judges a change is not the one that wrote it | pstack: "the agent that judges a change is never the one that wrote it" [@tan2026pstack] **[EE]** |
@@ -281,7 +281,7 @@ This reference architecture is a synthesis, not a validated design. Each box cor
 1. **Benchmark monoculture.** Much architectural evidence comes from SWE-bench variants, whose validity is contested (Chapter 02, §6).
 2. **Model drift.** Architectural findings measured with 2022–2024 models (PaLM-540B, GPT-4 Turbo, Claude 3 Opus) may not hold for later models. Cortex's observation that harness additions helped little under a stronger model is a single data point [@giampieri2026cortex] **[PP]**.
 3. **Confounded compute.** Architectures are rarely compared at equal cost.
-4. **Reliability under-reported.** Single-run success rates hide variance. pass^k-style metrics [@yao2024taubench] **[PP]** are rarely used in ASE papers.
+4. **Reliability under-reported.** Single-run success rates hide variance. pass^k-style metrics [@yao2024taubench] **[PR]** are rarely used in ASE papers.
 5. **Practitioner knowledge is untested.** Many of the most widely used practices (sub-agent delegation, author–verifier separation, instruction files) come from engineering experience and lack controlled evaluation.
 
 ## References

@@ -61,7 +61,7 @@ The Agentless result is important for AAE because it shows that *more autonomy i
 
 - **ChatDev** organises role-specialised agents through a "chat chain" for design, coding, and testing, with "communicative dehallucination" [@qian2024chatdev] **[PR]**.
 - **MetaGPT** encodes Standardised Operating Procedures into prompt sequences and assigns roles in an "assembly line paradigm" [@hong2024metagpt] **[PR]**.
-- **AutoGen** is a general framework for conversing agents, used among other things for coding [@wu2023autogen] **[PP]**.
+- **AutoGen** is a general framework for conversing agents, used among other things for coding [@wu2023autogen] **[PR]**.
 
 These systems were mostly evaluated on generating new, relatively small programs rather than on modifying large existing repositories. How well role-based decomposition works for repository-scale maintenance is an open question (agenda, Q6).
 
@@ -104,7 +104,7 @@ Successor benchmarks respond to some of these threats: SWE-bench Verified remove
 ### 6.2 Beyond resolve rates
 
 - **Time horizons.** Kwa et al. measure the length of tasks (in human time) an agent completes with 50% success. They report that horizons on their 170-task suite doubled roughly every seven months from 2019 to 2025, and they discuss the external-validity limits explicitly [@kwa2025horizon] **[PR]**.
-- **Reliability across trials.** τ-bench introduced pass^k, the probability that all *k* independent trials succeed, and found pass^8 below 25% in its retail domain for the agents tested [@yao2024taubench] **[PP]**. Although τ-bench is not an SE benchmark, the metric applies directly to ASE, where a user may need the agent to succeed every time rather than once.
+- **Reliability across trials.** τ-bench introduced pass^k, the probability that all *k* independent trials succeed, and found pass^8 below 25% in its retail domain for the agents tested [@yao2024taubench] **[PR]**. Although τ-bench is not an SE benchmark, the metric applies directly to ASE, where a user may need the agent to succeed every time rather than once.
 - **Real-world productivity.** In an RCT with 16 experienced developers on 246 tasks in their own mature projects, allowing AI tools (primarily Cursor Pro with Claude 3.5/3.7 Sonnet) increased completion time by 19%, contrary to developers' own forecast and post-hoc estimate [@becker2025uplift] **[PP]**. The study's setting (very experienced developers, large mature projects, early-2025 tools) limits generalisation in both directions.
 - **Maintenance cost.** The SWE-Maintain study reports a 5.6-point average drop in later-task resolution when starting from agent-written history rather than developer-written history, rising to 14.0 points when all earlier tests must also pass. The cost disappears when the inherited code passes earlier tests [@pan2026maintain] **[PP]**.
 

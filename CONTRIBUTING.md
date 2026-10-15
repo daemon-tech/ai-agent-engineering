@@ -53,4 +53,4 @@ AI-assisted contributions are welcome and must be disclosed in the PR. They are 
 
 ## Code of conduct
 
-Be precise, be kind, and attack claims rather than people. A formal code of conduct can be adopted once the repository is public.
+Be precise, be kind, and attack claims rather than people. A formal code of conduct is still to be adopted.

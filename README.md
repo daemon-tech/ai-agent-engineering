@@ -43,12 +43,12 @@ Every substantive claim carries one of these tags. Full definitions are in [METH
 
 Citations use Pandoc style, e.g. `[@yao2023react]`, and resolve against the single [references.bib](references.bib). The verification record for every entry is in [references-verification.md](references-verification.md).
 
-## License (suggestion, not yet decided)
+## License
 
-We **suggest** licensing the text under **Creative Commons Attribution 4.0 International (CC BY 4.0)**, which allows reuse with attribution and suits a scientific manuscript. Any code snippets could additionally be placed under a permissive software license such as MIT. **No LICENSE file is included yet; the maintainer (0xDaemon) has to decide.** Until a license is added, default copyright applies.
+The text is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**; see [`LICENSE`](LICENSE). Reuse is permitted with attribution. The repository is public at https://github.com/daemon-tech/ai-agent-engineering.
 
 Third-party material quoted here (short attributed quotations only) remains under its original license. The pstack case study quotes an MIT-licensed project.
 
 ## How to cite
 
-Until a versioned release exists, cite as: *0xDaemon et al., "AAE Research Notebook", v0.1, 2026-10-14, not peer reviewed.* A `CITATION.cff` should be added once the repository is public and the license is chosen.
+Until a versioned release exists, cite as: *0xDaemon et al., "AAE Research Notebook", v0.1, 2026-10-14, not peer reviewed.* A `CITATION.cff` is still to be added.
