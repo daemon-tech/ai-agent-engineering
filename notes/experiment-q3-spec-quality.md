@@ -83,9 +83,9 @@ Quelle: OpenAI, "Introducing SWE-bench Verified", 13.08.2024 (aktualisiert 24.02
      | Claude 3 Opus | 3,79 | nicht berichtet |
 
      \* Table 18 Fußnote: GPT-4 nur auf einem 25-%-Zufalls-Subset; zudem anderes Modell als Table 5 (GPT-4 vs. GPT-4-turbo), Zeile nicht direkt vergleichbar.
-5. ClarifyGPT (Mu et al., FSE 2024, Proc. ACM Softw. Eng. 1(FSE), S. 2332–2354, DOI 10.1145/3660810; arXiv 2310.10996; [PR]), verifiziert (PDF und Crossref; Pass@1 in %). Indirekter Beleg: Aufgaben auf Funktionsebene, nicht SWE-bench.
-   - Table 3 (S. 14), simuliertes Feedback, Durchschnitt: ChatGPT von 58,55 (Default) auf 67,22 (ClarifyGPT); GPT-4 von 68,02 auf 75,75.
-   - Table 2 (S. 12), menschliches Feedback, GPT-4: Durchschnitt über MBPP-sanitized und MBPP-ET von 61,24 (Default) auf 70,50 (ClarifyGPT Human); einzeln MBPP-sanitized 70,96 auf 80,80, MBPP-ET 51,52 auf 60,19.
+5. ClarifyGPT (Mu et al., FSE 2024, Proc. ACM Softw. Eng. 1(FSE), S. 2332–2354, DOI 10.1145/3660810; arXiv 2310.10996; [PR]), verifiziert an der FSE-Fassung (Autoren-PDF linshi-website.github.io/paper/ClarifyGPT.pdf, identisch mit PACMSE Article 103; Crossref; Pass@1 in %). arXiv v1 (2310.10996v1) hat abweichende Zahlen und nur vier Benchmarks, hier nicht verwendet. Indirekter Beleg: Aufgaben auf Funktionsebene, nicht SWE-bench.
+   - FSE Table 4 (PDF S. 14), simuliertes Feedback, Durchschnitt über fünf Benchmarks: ChatGPT von 54,32 (Default) auf 62,37 (ClarifyGPT); GPT-4 von 62,43 auf 69,60.
+   - FSE Table 3 (PDF S. 13), menschliches Feedback, GPT-4: Durchschnitt über MBPP-sanitized und MBPP-ET von 61,24 (Default) auf 70,50 (ClarifyGPT Human); einzeln MBPP-sanitized 70,96 auf 80,80, MBPP-ET 51,52 auf 60,19.
 6. OpenAI, "Why we no longer evaluate SWE-bench Verified", 23.02.2026, https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/, verifiziert (Volltext per Fetch):
    - Audit von 138 Verified-Problemen, die o3 "did not consistently solve over 64 independent runs". Jedes wurde von mindestens sechs Engineers geprüft.
    - "59.4% of the 138 problems contained material issues in test design and/or problem description". Davon 35,5 % narrow tests, 18,8 % wide tests (Tests prüfen nicht spezifizierte Zusatzfunktionalität), 5,1 % Sonstiges.
@@ -191,7 +191,7 @@ Verifiziert (Technical Scholar, Primärquellen-PDF mit Seiten-/Tabellenangabe, 1
   - Inkonsistenz offen ausgewiesen: §5 (S. 8) nennt "46% vs 41.8%" (Qwen vs. Sonnet 4) mit Verweis auf Fig. 3. Das Paar kommt in Fig. 3 nicht vor (Interaction: Qwen 53,8 / Sonnet 4 61,4; Hidden: Qwen 45,6 ≈ 46 / Sonnet 4 40,0; 41,8 nirgends; Table 1 ebenfalls nicht). Erklärung fehlt im Paper. Für Zitate: Fig. 3, Widerspruch vermerken.
 - SWE-bench (2310.06770v3): BM25 Table 5 (S. 6) vs. Oracle Table 18 (S. 26) für Claude 2, ChatGPT-3.5, GPT-4/GPT-4-turbo, SWE-Llama 7b/13b, Claude 3 Opus (BM25 only), siehe Tabelle oben. Caveats: GPT-4 Oracle nur 25-%-Subset und anderes Modell als Table 5; Claude 3 Opus ohne Oracle; 2,2 % (S. 7) = Whole-File-Generation, nicht Teilmenge.
 - UTBoost (arXiv 2506.09289): S. 2 wörtlich 5,2 % (26/500) Verified und 7,7 % (23/300) Lite mit unzureichenden Tests; Parser-Annotationfehler 54,2 % (271/500) Verified bzw. 54,6 % (164/300) Lite. Pflicht als zweiter False-success-Grader. Abstract-Zahl 36 = 23 Lite + 26 Verified mit 13 Überschneidungen (§4.2).
-- ClarifyGPT (FSE 2024, DOI 10.1145/3660810, [PR]): Table 3 (S. 14) Sim-Feedback und Table 2 (S. 12) Human-Feedback geprüft; 61,24 auf 70,50 ist der Mittelwert aus MBPP-sanitized und MBPP-ET. Nur indirekter Beleg (Funktions-Level, nicht SWE-bench); kein Claim für Q3-Effektgröße.
+- ClarifyGPT (FSE 2024, DOI 10.1145/3660810, [PR]): FSE-Fassung Table 4 (Sim-Feedback, fünf Benchmarks, 62,43 auf 69,60 bzw. 54,32 auf 62,37) und Table 3 (Human-Feedback) geprüft; die früher genannten 68,02/75,75 und 58,55/67,22 stammten aus arXiv v1 und sind ersetzt; 61,24 auf 70,50 ist der Mittelwert aus MBPP-sanitized und MBPP-ET. Nur indirekter Beleg (Funktions-Level, nicht SWE-bench); kein Claim für Q3-Effektgröße.
 
 Noch offen:
 - Ambig-SWE: Fig.-3-Werte nur grafisch abgelesen; Herkunft von "41.8%" ungeklärt; v1/v2-Abgleich ausstehend.

@@ -56,7 +56,7 @@ Every entry in `references.bib` was verified on **2026-10-14** against the prima
 | 50 | `liao2026skillrelay` | PP | https://arxiv.org/abs/2610.13227 | arXiv metadata and abstract |
 | 51 | `giampieri2026cortex` | PP | https://arxiv.org/abs/2610.14216 | arXiv metadata and abstract |
 | 52 | `li2026workflowfail` | PP | https://arxiv.org/abs/2610.17418 | arXiv metadata and abstract |
-| 53 | `mu2024clarifygpt` | PR | https://doi.org/10.1145/3660810 | Crossref DOI record: title, 8 authors, PACMSE 1(FSE):2332–2354, 2024 (FSE 2024 research track); Table 2 checked in arXiv 2310.10996 |
+| 53 | `mu2024clarifygpt` | PR | https://doi.org/10.1145/3660810 | Crossref DOI record: title, 8 authors, PACMSE 1(FSE):2332–2354, 2024 (FSE 2024 research track); FSE version (author PDF = PACMSE Article 103) Tables 3 and 4 checked 2026-10-15: five benchmarks, avg Pass@1 GPT-4 62.43→69.60, ChatGPT 54.32→62.37; human feedback GPT-4 61.24→70.50 (mean of MBPP-sanitized and MBPP-ET, FSE Table 3); arXiv v1 2310.10996v1 differs (four benchmarks), not used |
 
 ## Not yet verified (and therefore not cited as peer-reviewed)
 
