@@ -62,10 +62,15 @@ Citations use Pandoc style, e.g. `[@yao2023react]`, and resolve against the sing
 
 ## License
 
-The text is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**; see [`LICENSE`](LICENSE). Reuse is permitted with attribution. The repository is public at https://github.com/daemon-tech/ai-agent-engineering.
+- **Text** (manuscript, notes, docs): [CC BY 4.0](LICENSE). Reuse with attribution.
+- **Code snippets** (code blocks and any scripts): [MIT](LICENSE-CODE).
 
-Third-party material quoted here (short attributed quotations only) remains under its original license. The pstack case study quotes an MIT-licensed project.
+Short attributed third-party quotations stay under their original license (the pstack case study quotes an MIT-licensed project).
 
 ## How to cite
 
-Until a versioned release exists, cite as: *0xDaemon et al., "AAE Research Notebook", v0.1.1, 2026-10-15, not peer reviewed.* A `CITATION.cff` is still to be added.
+Sam (0xDaemon), "AAE Research Notebook", v0.1.1, 2026-10-15, https://github.com/daemon-tech/ai-agent-engineering. Not peer reviewed. Machine-readable metadata: [`CITATION.cff`](CITATION.cff).
+
+## Authorship and AI assistance
+
+Author: **Sam (0xDaemon)**, who is responsible for all content. Grok Bot AI agents assisted with literature research, drafting, and reference verification; every change went through a pull request approved by the author.
