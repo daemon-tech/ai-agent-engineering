@@ -28,6 +28,14 @@ Two edge cases appear in v0.1:
 - **Published, review type unverified.** Two items appear in ACM proceedings (a two-page item in the ICSE-Companion '26 proceedings, pp. 22–23 and a paper in the proceedings of the 2026 International Workshop on Agentic Engineering, AGENT '26, pp. 157–164) where we verified the DOI and proceedings but not the track or review process. BibTeX marks them `published-review-type-unverified`; the text tags them **[PUB]** (since v0.1.1).
 - **Same work, different records.** When a preprint and a peer-reviewed version differ in title or authors (e.g., Agentless, Hassan et al.'s ASE roadmap), we cite the version we actually read and say so.
 
+### Citation format
+
+Every citation is written `[@key] **[TAG]**`: exactly one tag directly after each `[@key]`, where TAG is that key's class in `references-verification.md`. Several keys get one tag each, e.g. `[@a] **[PR]**, [@b] **[PP]**`. `python3 scripts/check_citations.py` enforces this.
+
+### Claims and proposals
+
+A *claim* is a manuscript statement that cites a source and carries the source's evidence tag ([PR], [PUB], [PP], [VC], [EE]). Statements tagged [OP] are our own proposals or hypotheses (definitions, taxonomies, conjectures); they are not claims about the literature and are counted separately (e.g. as `open_question` nodes in graph/). This convention was proposed by an AI agent on the team (AAE Manuscript Editor) on 2026-10-15 and adopted with PR #12, where it first appears in the repo.
+
 ### Evidence grading within a source
 
 The class is a property of the *source*. Inside a peer-reviewed paper, we still distinguish:
@@ -50,7 +58,7 @@ We do not claim systematic-review completeness. v0.1 is a structured narrative r
 
 All substantive changes go through a pull request with the scientific-review checklist (`.github/PULL_REQUEST_TEMPLATE.md`). "Substantive" means any change that adds or alters a claim, a number, a citation, a definition, or an evidence tag.
 
-1. **Author self-check:** every new citation key exists in `references.bib` and has a row in `references-verification.md`; every number has a source and setup; every proposal is tagged **[OP]**. Every claim carries one of [PR], [PUB], [PP], [VC], [EE], [OP]; never present a preprint or a [PUB] item as peer-reviewed (check the venue's own listing).
+1. **Author self-check:** every new citation key exists in `references.bib` and has a row in `references-verification.md`; every number has a source and setup; every proposal is tagged **[OP]**. Every claim carries one of [PR], [PUB], [PP], [VC], [EE]; every proposal carries [OP]; never present a preprint or a [PUB] item as peer-reviewed (check the venue's own listing).
 2. **Scientific review:** at least one reviewer other than the author re-opens each new primary source and checks the claim against it. Reviewers record what they checked in the PR.
 3. **Disagreement:** if reviewers disagree on an evidence class or interpretation, the text states both positions or is downgraded to the weaker claim.
 4. **Merging:** only after the checklist is complete and the reviewer has given sign-off via comment. Typos and formatting can merge with lighter review.

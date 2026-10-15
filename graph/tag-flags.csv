@@ -1,15 +1,1 @@
-key,nearby_tag,verified_class,location,hand_check
-deng2025swebenchpro,VC,PP,manuscript/00-introduction.md:13,unchecked
-packer2023memgpt,PR,PP,manuscript/00-introduction.md:108,false_alarm
-park2023generative,PP,PR,manuscript/00-introduction.md:108,unchecked
-hassan2025agenticse,EE,PP,manuscript/00-introduction.md:120,unchecked
-hassan2026se3,PP,PR,manuscript/00-introduction.md:130,unchecked
-hassan2026se3,PP,PR,manuscript/01-definition-taxonomy.md:36,unchecked
-pan2025swegym,VC,PR,manuscript/01-definition-taxonomy.md:61,unchecked
-packer2023memgpt,PR,PP,manuscript/01-definition-taxonomy.md:63,unchecked
-mcp2026spec,PP,VC,manuscript/01-definition-taxonomy.md:63,unchecked
-tan2026pstack,PP,EE,manuscript/01-definition-taxonomy.md:65,unchecked
-aleithan2024swebenchplus,PR,PP,manuscript/02-agentic-software-engineering.md:24,false_alarm
-becker2025uplift,PR,PP,manuscript/02-agentic-software-engineering.md:25,unchecked
-anthropic2024effective,PR,VC,manuscript/03-agent-architectures.md:107,false_alarm
-pan2025swegym,VC,PR,manuscript/03-agent-architectures.md:213,unchecked
+key,nearby_tag,verified_class,location
