@@ -23,6 +23,7 @@ paper:liao2026skillrelay,paper,Understanding and Mitigating Cross-Session Attack
 paper:liu2024lost,paper,Lost in the Middle: How Language Models Use Long Contexts,PR,https://doi.org/10.1162/tacl_a_00638
 paper:madaan2023selfrefine,paper,Self-Refine: Iterative Refinement with Self-Feedback,PR,https://proceedings.neurips.cc/paper_files/paper/2023/hash/91edff07232fb1b55a505a9e9f6c0ff3-Abstract-Conference.html
 paper:mcp2026spec,paper,"Model Context Protocol Specification, revision 2026-07-28",VC,https://modelcontextprotocol.io/specification/2026-07-28
+paper:mu2024clarifygpt,paper,ClarifyGPT: A Framework for Enhancing LLM-Based Code Generation via Requirements Clarification,PR,https://doi.org/10.1145/3660810
 paper:packer2023memgpt,paper,MemGPT,PP,https://arxiv.org/abs/2310.08560
 paper:pan2025swegym,paper,Training Software Engineering Agents and Verifiers with {SWE-Gym,PR,https://proceedings.mlr.press/v267/pan25g.html
 paper:pan2026maintain,paper,Do Modifications Made by Coding Agents Make Subsequent Software Maintenance Harder?,PP,https://arxiv.org/abs/2610.14768

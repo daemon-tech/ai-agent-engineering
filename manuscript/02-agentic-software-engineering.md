@@ -15,14 +15,14 @@ The task of turning an issue description into a correct patch existed long befor
 
 | Period | Representative work | What changed | Evidence |
 |---|---|---|---|
-| 2022–2023 | ReAct, Toolformer, Reflexion | Models interleave reasoning with actions and tool calls; feedback across attempts | [@yao2023react], [@schick2023toolformer], [@shinn2023reflexion] **[PR]** |
+| 2022–2023 | ReAct, Toolformer, Reflexion | Models interleave reasoning with actions and tool calls; feedback across attempts | [@yao2023react] **[PR]**, [@schick2023toolformer] **[PR]**, [@shinn2023reflexion] **[PR]** |
 | Oct 2023 | SWE-bench | Repository-level issue resolution becomes a public benchmark; best reported model resolves 1.96% | [@jimenez2024swebench] **[PR]** |
-| 2023–2024 | ChatDev, MetaGPT | Role-based multi-agent "software company" designs | [@qian2024chatdev], [@hong2024metagpt] **[PR]** |
-| Apr–May 2024 | AutoCodeRover, SWE-agent | Structure-aware code search; agent-computer interfaces | [@zhang2024autocoderover], [@yang2024sweagent] **[PR]** |
-| Jul 2024 | Agentless, OpenHands | A fixed pipeline rivals agents; an open platform for agent development | [@xia2025agentless], [@wang2025openhands] **[PR]** |
+| 2023–2024 | ChatDev, MetaGPT | Role-based multi-agent "software company" designs | [@qian2024chatdev] **[PR]**, [@hong2024metagpt] **[PR]** |
+| Apr–May 2024 | AutoCodeRover, SWE-agent | Structure-aware code search; agent-computer interfaces | [@zhang2024autocoderover] **[PR]**, [@yang2024sweagent] **[PR]** |
+| Jul 2024 | Agentless, OpenHands | A fixed pipeline rivals agents; an open platform for agent development | [@xia2025agentless] **[PR]**, [@wang2025openhands] **[PR]** |
 | Aug 2024 | SWE-bench Verified | Human-screened 500-task subset; benchmark validity becomes a first-class concern | [@chowdhury2024sweverified] **[VC]** |
-| Oct 2024 onward | SWE-bench Multimodal, SWE-Bench+, SWE-Gym | Beyond Python and text; audits of solution leakage; training environments | [@yang2025swebenchmm], [@pan2025swegym] **[PR]**; [@aleithan2024swebenchplus] **[PP]** |
-| 2025 | Time horizons, developer RCT, contamination probes, SWE-Bench Pro | Measurement shifts toward task length, real-world productivity, contamination resistance | [@kwa2025horizon] **[PR]**; [@becker2025uplift], [@liang2025illusion], [@deng2025swebenchpro] **[PP]** |
+| Oct 2024 onward | SWE-bench Multimodal, SWE-Bench+, SWE-Gym | Beyond Python and text; audits of solution leakage; training environments | [@yang2025swebenchmm] **[PR]**, [@pan2025swegym] **[PR]**; [@aleithan2024swebenchplus] **[PP]** |
+| 2025 | Time horizons, developer RCT, contamination probes, SWE-Bench Pro | Measurement shifts toward task length, real-world productivity, contamination resistance | [@kwa2025horizon] **[PR]**; [@becker2025uplift] **[PP]**, [@liang2025illusion] **[PP]**, [@deng2025swebenchpro] **[PP]** |
 | 2026 | SE 3.0 in TOSEM; audits of benchmarks and harnesses; maintenance and boundary studies | Discipline-level framing; evaluation reliability; long-horizon and safety concerns | [@hassan2026se3] **[PR]**; see [frontier review](../notes/2026-10-frontier-review.md) **[PP]** |
 
 ## 3. The core task and how it is scored
@@ -97,7 +97,7 @@ Steps 3, 5, and 7 produce the **verification evidence**. Benchmarks score steps 
 | **Narrow distribution**: Python only, text only | Top systems struggle on 617 visual JavaScript tasks; SWE-agent 12% vs. 6% for the next best | [@yang2025swebenchmm] **[PR]** |
 | **Easy-task skew** | Most original SWE-bench tasks estimated at under one hour for an experienced engineer (77.8%) | [@chowdhury2024sweverified] **[VC]** |
 | **Scaffold dependence** | GPT-4 on SWE-bench Lite: 2.7% (early RAG scaffold) to 28.3% (CodeR), per OpenAI's reading of the leaderboard | [@chowdhury2024sweverified] **[VC]** |
-| **Harness and oracle defects** | Audits find grader defects and configuration-dependent results in agent benchmarks | [@chen2026oracle], [@ding2026reexec] **[PP]** |
+| **Harness and oracle defects** | Audits find grader defects and configuration-dependent results in agent benchmarks | [@chen2026oracle] **[PP]**, [@ding2026reexec] **[PP]** |
 
 Successor benchmarks respond to some of these threats: SWE-bench Verified removes infeasible tasks [@chowdhury2024sweverified] **[VC]**; SWE-Bench Pro uses held-out and commercial repositories and longer tasks [@deng2025swebenchpro] **[PP]**; SWE-Bench Pro Verified in turn reports reward-hacking channels and task-quality issues in SWE-Bench Pro and revises it [@zheng2026sweproverified] **[PP]**. The pattern of benchmark, audit, and revised benchmark is itself a finding. **[OP]** We hypothesise that any fixed public benchmark for ASE has a limited useful lifetime, and that audit methodology should be treated as part of benchmark design.
 

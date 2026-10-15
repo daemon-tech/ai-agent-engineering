@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """Rebuild graph/*.csv and graph/coverage.md from manuscript/, references.bib, references-verification.md.
 Run from the repo root: python3 graph/build.py"""
-import re, csv, glob, collections
+import re, csv, glob, collections, sys
+sys.path.insert(0, 'scripts')
+from check_citations import problems
 TAGS = 'PR|PUB|PP|VC|EE'
 # [OP] items linked to issues (matched by text in the [OP] line; issue titles checked by hand)
 ISSUES = {r'Proposed taxonomy': 3, r'done predicate': 2}
-# heuristic tag flags checked by hand and found to be false alarms (tag belongs to adjacent citation)
+# legacy: tag flags checked by hand and found to be false alarms (tag belongs to adjacent citation)
 FALSE_ALARMS = {('packer2023memgpt', 'manuscript/00-introduction.md:108'),
                 ('aleithan2024swebenchplus', 'manuscript/02-agentic-software-engineering.md:24'),
                 ('anthropic2024effective', 'manuscript/03-agent-architectures.md:107')}
@@ -40,10 +42,8 @@ for f in sorted(glob.glob('manuscript/*.md')):
             if k not in ver: continue
             edges.append((sec or ch, 'cites', 'paper:' + k, loc)); cites[ch] += 1
             if ver[k][0] in ('PR', 'PUB'): strong[ch] += 1
-            m = re.search(rf'\[({TAGS})\][^@]{{0,40}}\[@{k}\b|\[@{k}[^\]]*\]\s*\[({TAGS})\]', l)
-            if m and (m[1] or m[2]) != ver[k][0]:
-                fa = (k, loc) in FALSE_ALARMS
-                flags.append((k, m[1] or m[2], ver[k][0], loc, 'false_alarm' if fa else 'unchecked'))
+    for loc, k, tag, exp in problems(f, open(f).read(), {k: v[0] for k, v in ver.items()}):
+        flags.append((k, tag or '', exp, loc, 'false_alarm' if (k, loc) in FALSE_ALARMS else 'unchecked'))
 nodes = list(dict.fromkeys(nodes)); edges = list(dict.fromkeys(edges))
 assert len({n[0] for n in nodes}) == len(nodes), 'duplicate node ids'
 w = lambda p, h, rows: csv.writer(open(p, 'w', newline=''), lineterminator='\n').writerows([h] + rows)
