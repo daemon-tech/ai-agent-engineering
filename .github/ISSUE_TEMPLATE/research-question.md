@@ -31,6 +31,6 @@ labels: research-question
 
 ## Checklist
 
-- [ ] I searched existing issues and `agenda/open-questions.md`.
+- [ ] I searched existing issues and `notes/open-questions.md`.
 - [ ] Every cited source is a primary source I opened myself.
 - [ ] Proposals and hypotheses are marked [OP].
