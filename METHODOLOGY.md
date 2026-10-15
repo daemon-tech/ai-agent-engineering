@@ -25,7 +25,7 @@ This document describes how sources enter the notebook, how claims are labelled,
 
 Two edge cases appear in v0.1:
 
-- **Published, review type unverified.** Two items appear in ACM proceedings (a two-page item in the ICSE 2026 proceedings and a paper in the proceedings of the 2026 International Workshop on Agentic Engineering) where we verified the DOI and proceedings but not the track or review process. BibTeX marks them `published-review-type-unverified`; the text tags them **[PUB]** (since v0.1.1).
+- **Published, review type unverified.** Two items appear in ACM proceedings (a two-page item in the ICSE-Companion '26 proceedings and a paper in the proceedings of the 2026 International Workshop on Agentic Engineering) where we verified the DOI and proceedings but not the track or review process. BibTeX marks them `published-review-type-unverified`; the text tags them **[PUB]** (since v0.1.1).
 - **Same work, different records.** When a preprint and a peer-reviewed version differ in title or authors (e.g., Agentless, Hassan et al.'s ASE roadmap), we cite the version we actually read and say so.
 
 ### Evidence grading within a source

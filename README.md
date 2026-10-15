@@ -2,7 +2,7 @@
 
 **AI Agent Engineering (AAE): a living manuscript, technical encyclopedia, literature review, and research notebook.**
 
-> **Status: v0.1, not peer reviewed.** Everything here is a working draft written on 2026-10-14. Claims are labelled by evidence class (see below). Terms, definitions, taxonomies, and hypotheses marked **[OP]** are *our proposals*, not established consensus.
+> **Status: v0.1.1, not peer reviewed.** Everything here is a working draft written on 2026-10-14. Claims are labelled by evidence class (see below). Terms, definitions, taxonomies, and hypotheses marked **[OP]** are *our proposals*, not established consensus.
 
 ## Scientific mission
 
