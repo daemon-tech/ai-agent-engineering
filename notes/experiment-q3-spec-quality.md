@@ -22,7 +22,7 @@ Quelle: OpenAI, "Introducing SWE-bench Verified", 13.08.2024 (aktualisiert 24.02
     - 3 "The tests are too narrow/broad or they look for something different than what the issue is about."
 - **Redundanz/Ensembling:** "each sample is labeled 3 times by separate annotators ... we conservatively ensemble annotations by taking the highest-severity label amongst the 3 annotators."
 - **Schwellenregel:** "we filter out any sample ... where either the problem statement or the `FAIL_TO_PASS` unit tests have an ensemble label of 2 or above in severity. We also filter out all samples that have other major issues flagged." Das heißt: Ein einzelner Annotator von dreien reicht für den Ausschluss. OpenAI nennt das selbst "a higher false-positive rate in removing samples".
-- **Zahlen:** "38.3% of samples were flagged for underspecified problem statements, and 61.1% were flagged for unit tests that may unfairly mark valid solutions as incorrect. Overall ... 68.3% of SWE-bench samples being filtered out". Von 1.699 bleiben rechnerisch also etwa 539 Kandidaten. Diese ~539 sind meine Hochrechnung, keine Angabe von OpenAI.
+- **Zahlen [VC]:** "38.3% of samples were flagged for underspecified problem statements, and 61.1% were flagged for unit tests that may unfairly mark valid solutions as incorrect. Overall ... 68.3% of SWE-bench samples being filtered out". Von 1.699 bleiben rechnerisch also etwa 539 Kandidaten. Diese ~539 sind meine Hochrechnung, keine Angabe von OpenAI.
 - **Weg zu 500:** "We include as many samples with difficulty 1-4 hours and >4 hours as possible, and then we randomly sample the remainder to arrive at the 500 samples".
 - **Schwierigkeits-Buckets** (Zusatzinfo, "not used for dataset filtering"):
   - Die vier Stufen sind "<15 min fix", "15 min–1 hour", "1–4 hours" und ">4 hours".
@@ -45,9 +45,9 @@ Quelle: OpenAI, "Introducing SWE-bench Verified", 13.08.2024 (aktualisiert 24.02
    - Auf **Verified** haben 37 Instanzen Lösungs-Leaks. Von 112 gelösten Tasks (22,4 %) sind 55,36 % verdächtig, die Rate fällt dann auf 10,0 %.
    - Auf SWE-bench+ (Issues nach dem Cutoff, ohne Leaks) erreicht SWE-Agent+GPT-4 noch 0,55 %, AutoCodeRover+GPT-4o 3,83 % (statt 18,83 % auf dem Leaderboard).
    - Fazit: Hinweise in der Spec treiben scheinbaren Erfolg stark.
-3. **Ambig-SWE** (Vijayvargiya, Zhou, Yerukola, Sap, Neubig; ICLR 2026; https://arxiv.org/abs/2502.13069):
+3. **Ambig-SWE** (Vijayvargiya, Zhou, Yerukola, Sap, Neubig; **[PP]**, ICLR 2026 nur selbst angegeben; https://arxiv.org/abs/2502.13069):
    - Ist eine unterspezifizierte Variante von Verified mit einem simulierten User, der die volle Spec kennt.
-   - Interaktion verbessert die Leistung bei unterspezifizierten Inputs um "up to 74% over the non-interactive settings" (arXiv 2502.13069v3, Abstract S. 1, Einleitung S. 2): **bis zu 74 % relativ**, nicht +74 Punkte; je Modell sehr unterschiedlich. Ein deutlicher Abstand zu voll spezifizierten Issues bleibt.
+   - Interaktion verbessert die Leistung bei unterspezifizierten Inputs um "up to 74% over the non-interactive settings" (arXiv 2502.13069v3, Abstract S. 1, Einleitung S. 2): Je Modell sehr unterschiedlich. Ein deutlicher Abstand zu voll spezifizierten Issues bleibt.
    - Unterspezifikation erkennen: Nur Claude Sonnet 4 (89 %) und Claude Sonnet 3.5 (84 %) erreichen nennenswerte Genauigkeit.
    - Dateipfade als Hinweis helfen vor allem schwächeren Modellen. Qwen 3 Coder wird damit sogar schlechter.
    - Das passt zur Hypothese "Effekt größer für schwächere Harnesses", allerdings nur qualitativ.
@@ -139,14 +139,19 @@ Bedingungen:
 
 ### Stichprobe und Statistik
 - **Paired Design:** jede Instanz in allen Bedingungen.
-- Stichprobe: 80–100 Verified-Instanzen, stratifiziert nach Repo und Schwierigkeits-Bucket, nur Instanzen mit Rubrik-Labels ≤ 1, fixer Seed.
-- **Power** (grob, eigene Schätzung): Bei Δ ≈ 10 pp und ~20 % diskordanten Paaren brauchen McNemar mit α = 0,05 und Power 0,8 etwa 80–100 Paare. Kleinere Effekte erfordern mehr Instanzen oder mehr Läufe.
+- Stichprobe: **Ziel ~190 Paare** Verified-Instanzen, stratifiziert nach Repo und Schwierigkeits-Bucket, nur Instanzen mit Rubrik-Labels ≤ 1, fixer Seed.
+- **Power** (eigene Schätzung, Reviewer-Korrektur): Für Δ = 10 pp bei ~20 % diskordanten Paaren braucht McNemar (α = 0,05, Power 0,8) ~155 Paare, mit Holm ~190. Reichen die Verified-Kandidaten mit Labels ≤ 1 nicht, gilt bei 80–100 Paaren ehrlich eine **MDE von ~13–15 pp**.
 - **Tests:**
-  - McNemar pro Bedingungspaar (S0 vs. S1, S0 vs. S2), Holm-korrigiert.
+  - **Primärvergleich (konfirmatorisch): S2 vs. S0**, McNemar. Sekundär: S1 vs. S0, Holm-korrigiert.
   - Hauptmodell: Mixed-Effects-Logistik `resolved ~ condition * harness + (1|instance) + (1|repo)`.
   - Cluster-Bootstrap über Instanzen (10.000 Resamples) für 95 %-CIs von Δ-Resolve und Kosten.
   - Effektgröße: Odds Ratio und Δ in pp.
-- **Pre-Registration** im Notebook vor dem ersten Lauf: Hypothesen, Ausschlussregeln, primäre Metrik.
+- **Pre-Registration** im Notebook vor dem ersten Lauf, festgeschrieben:
+  - Hypothesen; primäre Metrik Resolve-Rate; Ausschlussregeln.
+  - Primärvergleich S2 vs. S0 (McNemar, α = 0,05); sekundär S1 vs. S0 (Holm).
+  - Analyseplan: Mixed-Effects-Logistik `resolved ~ condition * harness + (1|instance) + (1|repo)`, Cluster-Bootstrap-CIs (10.000), OR und Δ pp.
+  - Stichprobe/MDE: Ziel ~190 Paare (Δ 10 pp); bei 80–100 Paaren MDE ~13–15 pp.
+  - Pflicht: Contamination-Probe (Post-Cutoff/SWE-bench Pro) und UTBoost als zweiter Grader.
 
 ### Threats to Validity
 - **Konstrukt:** Die Umschreibungen ändern neben der Spec-Qualität auch Länge und Stil. Gegenmaßnahme: längenangepasste Kontrollbedingung mit neutralem Füllinhalt.
@@ -169,7 +174,7 @@ Bedingungen:
 Verifiziert:
 - OpenAI 38,3 / 61,1 / 68,3 %: wörtlich im Post (Volltext) und im archive.org-Snapshot. Tag **[VC]** (Herstellerangabe zum eigenen Benchmark).
 - OpenAI "Why we no longer evaluate SWE-bench Verified" (23.02.2026): Volltext gelesen ([VC]). Folge: Contamination-Probe mit Post-Cutoff- bzw. SWE-bench-Pro-Kontrollset ist **Pflicht**.
-- Ambig-SWE (2502.13069v3): "up to 74%" relativ (S. 1–2). Resolve-Raten aus Figure 3 (S. 5) aus dem Diagramm abgelesen (±0,1 pp). **Widerspruch:** §5 nennt "46% vs 41.8%" (Qwen 3 Coder vs. Sonnet 4) mit Verweis auf Fig. 3; das passt nicht zu den Balken. Wir zitieren Fig. 3 und vermerken den Widerspruch.
+- Ambig-SWE (2502.13069v3): wörtlich "up to 74% over the non-interactive settings" (S. 1–2); [PP], ICLR 2026 nur selbst angegeben. Resolve-Raten aus Figure 3 (S. 5) aus dem Diagramm abgelesen (±0,1 pp). **Widerspruch:** §5 nennt "46% vs 41.8%" (Qwen 3 Coder vs. Sonnet 4) mit Verweis auf Fig. 3; das passt nicht zu den Balken. Wir zitieren Fig. 3 und vermerken den Widerspruch.
 - SWE-bench (2310.06770v3, ICLR 2024): Claude 2 erreicht 4,8 % mit Oracle-Retrieval vs. 1,96 % mit BM25 (§5, Table 5/18).
 - UTBoost (ACL 2025, S. 3762–3774, arXiv 2506.09289): Abstract und Anthology-Metadaten geprüft. **Pflicht** als zweiter False-success-Grader.
 
