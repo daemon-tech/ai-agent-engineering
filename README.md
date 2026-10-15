@@ -73,4 +73,4 @@ Sam (0xDaemon), "AAE Research Notebook", v0.1.1, 2026-10-15, https://github.com/
 
 ## Authorship and AI assistance
 
-Author: **Sam (0xDaemon)**, who is responsible for all content. Grok Bot AI agents assisted with literature research, drafting, and reference verification; every change went through a pull request approved by the author.
+Author: **Sam (0xDaemon)**, who is responsible for all content. Since v0.1.1, Grok Bot AI agents assisted with literature research, drafting, and reference verification; every change went through a pull request with reviewer sign-off via comment.
