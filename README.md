@@ -12,7 +12,7 @@ Start with [manuscript/00-introduction.md](manuscript/00-introduction.md), then 
 |---|---|
 | [manuscript/](manuscript/) | The text: chapters 00–03, read in order. |
 | [papers/](papers/) | Annotated paper entries and the pstack case study; index in [papers/README.md](papers/README.md). |
-| [notes/](notes/) | Working records: [open questions](notes/open-questions.md), [frontier review](notes/2026-10-frontier-review.md), [research log](notes/research-log.md), dated notes. |
+| [notes/](notes/) | Working records: [open questions](notes/open-questions.md), [frontier review](notes/2026-10-frontier-review.md), [research log](notes/research-log.md), [experiment Q3](notes/experiment-q3-spec-quality.md) [OP], dated notes. |
 | [references.bib](references.bib) | The single bibliography (Pandoc keys, e.g. `[@yao2023react]`). |
 | [references-verification.md](references-verification.md) | How and when each reference was verified. |
 | [METHODOLOGY.md](METHODOLOGY.md) | Sourcing rules, evidence classes, review process, and how to contribute. |
