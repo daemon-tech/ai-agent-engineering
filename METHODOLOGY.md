@@ -53,7 +53,7 @@ All substantive changes go through a pull request with the scientific-review che
 1. **Author self-check:** every new citation key exists in `references.bib` and has a row in `references-verification.md`; every number has a source and setup; every proposal is tagged **[OP]**. Every claim carries one of [PR], [PUB], [PP], [VC], [EE], [OP]; never present a preprint or a [PUB] item as peer-reviewed (check the venue's own listing).
 2. **Scientific review:** at least one reviewer other than the author re-opens each new primary source and checks the claim against it. Reviewers record what they checked in the PR.
 3. **Disagreement:** if reviewers disagree on an evidence class or interpretation, the text states both positions or is downgraded to the weaker claim.
-4. **Merging:** only after the checklist is complete and the reviewer approves. Typos and formatting can merge with lighter review.
+4. **Merging:** only after the checklist is complete and the reviewer has given sign-off via comment. Typos and formatting can merge with lighter review.
 5. **Corrections:** errors are fixed in a new commit, never by rewriting history, and recorded in `CHANGELOG.md`.
 
 ## 5. Use of AI assistance
