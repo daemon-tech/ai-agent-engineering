@@ -1,0 +1,115 @@
+id,type,label,evidence_class,source
+paper:aleithan2024swebenchplus,paper,SWE-Bench+,PP,https://arxiv.org/abs/2410.06992
+paper:anthropic2024effective,paper,Building effective agents,VC,https://www.anthropic.com/engineering/building-effective-agents
+paper:assalaarachchi2026agenticpm,paper,Toward Agentic Software Project Management: A Vision and Roadmap,PUB,https://doi.org/10.1145/3786167.3788409
+paper:becker2025uplift,paper,Measuring the Impact of Early-2025 {AI,PP,https://arxiv.org/abs/2507.09089
+paper:chen2026oracle,paper,When Agent Evaluation Becomes Unreliable: An Empirical Study of Oracle Failures and Configuration-Dependent Measurement in an {LLM,PP,https://arxiv.org/abs/2610.16067
+paper:chowdhury2024sweverified,paper,Introducing {SWE-bench Verified,VC,https://openai.com/index/introducing-swe-bench-verified/
+paper:deng2025swebenchpro,paper,SWE-Bench Pro,PP,https://arxiv.org/abs/2509.16941
+paper:ding2026reexec,paper,Re-executing Coding-Agent Evaluations: Unchanged Decisions and Unresolved Policy Risk,PP,https://arxiv.org/abs/2610.14460
+paper:giampieri2026cortex,paper,Cortex: Measurement-Gated Evolution and Pruning of Coding-Agent Skills and Rules,PP,https://arxiv.org/abs/2610.14216
+paper:guo2026harness,paper,From Question Answering to Task Completion: A Survey on Agent System and Harness Design,PP,https://arxiv.org/abs/2606.20683
+paper:hassan2025agenticse,paper,Agentic Software Engineering: Foundational Pillars and a Research Roadmap,PP,https://arxiv.org/abs/2509.06216
+paper:hassan2026icse,paper,Agentic Software Engineering: A Roadmap to Software Engineering 3.0,PUB,https://doi.org/10.1145/3774748.3776601
+paper:hassan2026se3,paper,Towards {AI,PR,https://doi.org/10.1145/3807901
+paper:hong2024metagpt,paper,MetaGPT,PR,https://proceedings.iclr.cc/paper_files/paper/2024/hash/6507b115562bb0a305f1958ccc87355a-Abstract-Conference.html
+paper:hou2024llm4se,paper,Large Language Models for Software Engineering: A Systematic Literature Review,PR,https://doi.org/10.1145/3695988
+paper:jimenez2024swebench,paper,SWE-bench,PR,https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html
+paper:kwa2025horizon,paper,Measuring {AI,PR,https://papers.nips.cc/paper_files/paper/2025/hash/85069585133c4c168c865e65d72e9775-Abstract-Conference.html
+paper:lewis2020rag,paper,Retrieval-Augmented Generation for Knowledge-Intensive {NLP,PR,https://proceedings.neurips.cc/paper_files/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html
+paper:li2026workflowfail,paper,Why Agentic Workflows Fail: A Taxonomy Derived from Literature and Empirical Data,PP,https://arxiv.org/abs/2610.17418
+paper:liang2025illusion,paper,The {SWE-Bench,PP,https://arxiv.org/abs/2506.12286
+paper:liao2026skillrelay,paper,Understanding and Mitigating Cross-Session Attacks via Persistent Artifacts in Agent Skill Composition,PP,https://arxiv.org/abs/2610.13227
+paper:liu2024lost,paper,Lost in the Middle: How Language Models Use Long Contexts,PR,https://doi.org/10.1162/tacl_a_00638
+paper:madaan2023selfrefine,paper,Self-Refine: Iterative Refinement with Self-Feedback,PR,https://proceedings.neurips.cc/paper_files/paper/2023/hash/91edff07232fb1b55a505a9e9f6c0ff3-Abstract-Conference.html
+paper:mcp2026spec,paper,"Model Context Protocol Specification, revision 2026-07-28",VC,https://modelcontextprotocol.io/specification/2026-07-28
+paper:packer2023memgpt,paper,MemGPT,PP,https://arxiv.org/abs/2310.08560
+paper:pan2025swegym,paper,Training Software Engineering Agents and Verifiers with {SWE-Gym,PR,https://proceedings.mlr.press/v267/pan25g.html
+paper:pan2026maintain,paper,Do Modifications Made by Coding Agents Make Subsequent Software Maintenance Harder?,PP,https://arxiv.org/abs/2610.14768
+paper:park2023generative,paper,Generative Agents: Interactive Simulacra of Human Behavior,PR,https://doi.org/10.1145/3586183.3606763
+paper:qian2024chatdev,paper,ChatDev,PR,https://doi.org/10.18653/v1/2024.acl-long.810
+paper:schick2023toolformer,paper,Toolformer: Language Models Can Teach Themselves to Use Tools,PR,https://proceedings.neurips.cc/paper_files/paper/2023/hash/d842425e4bf79ba039352da0f658a906-Abstract-Conference.html
+paper:shinn2023reflexion,paper,Reflexion: Language Agents with Verbal Reinforcement Learning,PR,https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html
+paper:sumers2024coala,paper,Cognitive Architectures for Language Agents,PR,https://openreview.net/forum?id=1i6ZCvflQJ
+paper:tan2026pstack,paper,"pstack (Cursor plugin), version 0.15.24",EE,https://github.com/cursor/plugins/tree/main/pstack
+paper:trong2026misbehavior,paper,SWE-MISBEHAVIOR,PP,https://arxiv.org/abs/2610.18206
+paper:wang2024codeact,paper,Executable Code Actions Elicit Better {LLM,PR,https://proceedings.mlr.press/v235/wang24h.html
+paper:wang2024survey,paper,A survey on large language model based autonomous agents,PR,https://doi.org/10.1007/s11704-024-40231-1
+paper:wang2025openhands,paper,OpenHands,PR,https://proceedings.iclr.cc/paper_files/paper/2025/hash/a4b6ad6b48850c0c331d1259fc66a69c-Abstract-Conference.html
+paper:wang2026agentswe,paper,AgentSWE,PP,https://arxiv.org/abs/2610.13361
+paper:wei2022chain,paper,Chain-of-Thought Prompting Elicits Reasoning in Large Language Models,PR,https://proceedings.neurips.cc/paper_files/paper/2022/hash/9d5609613524ecf4f15af0f7b31abca4-Abstract-Conference.html
+paper:wooldridge1995intelligent,paper,Intelligent agents: theory and practice,PR,https://doi.org/10.1017/S0269888900008122
+paper:wu2023autogen,paper,AutoGen,PR,https://openreview.net/forum?id=BAakY1hNKS
+paper:xia2025agentless,paper,Demystifying {LLM,PR,https://doi.org/10.1145/3715754
+paper:yang2024sweagent,paper,SWE-agent,PR,https://proceedings.neurips.cc/paper_files/paper/2024/hash/5a7c947568c1b1328ccc5230172e1e7c-Abstract-Conference.html
+paper:yang2025swebenchmm,paper,SWE-bench,PR,https://proceedings.iclr.cc/paper_files/paper/2025/hash/07d6332ae36730707fddddba736d7b6c-Abstract-Conference.html
+paper:yao2023react,paper,ReAct,PR,https://iclr.cc/virtual/2023/poster/11003
+paper:yao2023tree,paper,Tree of Thoughts: Deliberate Problem Solving with Large Language Models,PR,https://proceedings.neurips.cc/paper_files/paper/2023/hash/271db9922b8d1f4dd7aaef84ed5ac703-Abstract-Conference.html
+paper:yao2024taubench,paper,$\tau$-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains,PR,https://proceedings.iclr.cc/paper_files/paper/2025/hash/1b126cc38b8638e07bef37e7b2bb72bf-Abstract-Conference.html
+paper:yao2026sweeper,paper,SWEeper-Bench,PP,https://arxiv.org/abs/2610.14096
+paper:zhang2024autocoderover,paper,AutoCodeRover,PR,https://doi.org/10.1145/3650212.3680384
+paper:zheng2026sweproverified,paper,SWE-Bench Pro Verified,PP,https://arxiv.org/abs/2609.08149
+paper:zhou2023leasttomost,paper,Least-to-Most Prompting Enables Complex Reasoning in Large Language Models,PR,https://iclr.cc/virtual/2023/poster/12263
+paper:zhou2026externalization,paper,Externalization in {LLM,PP,https://arxiv.org/abs/2604.08224
+chapter:00-introduction,chapter,AI Agent Engineering: An Introductory Manuscript,,manuscript/00-introduction.md
+concept:00-introduction/abstract,concept,Abstract,,manuscript/00-introduction.md:5
+concept:00-introduction/1-introduction,concept,1. Introduction,,manuscript/00-introduction.md:9
+concept:00-introduction/2-background,concept,2. Background,,manuscript/00-introduction.md:33
+concept:00-introduction/3-conceptual-foundations,concept,3. Conceptual foundations,,manuscript/00-introduction.md:59
+concept:00-introduction/4-methodology-of-this-notebook,concept,4. Methodology of this notebook,,manuscript/00-introduction.md:83
+concept:00-introduction/5-challenges,concept,5. Challenges,,manuscript/00-introduction.md:94
+concept:00-introduction/6-discussion,concept,6. Discussion,,manuscript/00-introduction.md:122
+open_question:00-introduction/L124,open_question,6.1 Why a discipline-level framing?,OP,manuscript/00-introduction.md:124
+concept:00-introduction/7-conclusion,concept,7. Conclusion,,manuscript/00-introduction.md:136
+concept:00-introduction/references,concept,References,,manuscript/00-introduction.md:140
+chapter:01-definition-taxonomy,chapter,Chapter 01: A Proposed Definition and Taxonomy of AI Agent Engineering,,manuscript/01-definition-taxonomy.md
+open_question:01-definition-taxonomy/L5,open_question,"Status of this chapter: , our proposal. Everything in this chapter that defines, classifies, or names is a proposal by t",OP,manuscript/01-definition-taxonomy.md:5
+concept:01-definition-taxonomy/1-why-propose-a-definition-at-all,concept,1. Why propose a definition at all?,,manuscript/01-definition-taxonomy.md:7
+concept:01-definition-taxonomy/2-proposed-definition-op,concept,2. Proposed definition [OP],,manuscript/01-definition-taxonomy.md:15
+open_question:01-definition-taxonomy/L15,open_question,2. Proposed definition,OP,manuscript/01-definition-taxonomy.md:15
+open_question:01-definition-taxonomy/L34,open_question,| Term | Origin | Relation to AAE (our reading)  |,OP,manuscript/01-definition-taxonomy.md:34
+concept:01-definition-taxonomy/3-proposed-taxonomy-op,concept,3. Proposed taxonomy [OP],,manuscript/01-definition-taxonomy.md:41
+open_question:01-definition-taxonomy/L41,open_question,3. Proposed taxonomy,OP,https://github.com/daemon-tech/ai-agent-engineering/issues/3
+open_question:01-definition-taxonomy/L72,open_question,"1. Specification: stating the goal and the done predicate, i.e., the observable condition that ends the task.  We hypoth",OP,https://github.com/daemon-tech/ai-agent-engineering/issues/2
+open_question:01-definition-taxonomy/L80,open_question,"The distinction between verification (this output, now) and evaluation (this configuration, in general) is, we think, th",OP,manuscript/01-definition-taxonomy.md:80
+open_question:01-definition-taxonomy/L84,open_question,Domains differ in how strong and how available their verification signals are. We propose characterising each domain by ,OP,manuscript/01-definition-taxonomy.md:84
+open_question:01-definition-taxonomy/L94,open_question,Hypothesis H1 . Agent reliability in a domain is bounded by the strength and availability of its verification signals mo,OP,manuscript/01-definition-taxonomy.md:94
+open_question:01-definition-taxonomy/L98,open_question,"For each layer and activity we propose evaluating against five attributes : effectiveness (task success), reliability (v",OP,manuscript/01-definition-taxonomy.md:98
+concept:01-definition-taxonomy/4-using-the-taxonomy-a-reporting-checklist-op,concept,4. Using the taxonomy: a reporting checklist [OP],,manuscript/01-definition-taxonomy.md:100
+open_question:01-definition-taxonomy/L100,open_question,4. Using the taxonomy: a reporting checklist,OP,manuscript/01-definition-taxonomy.md:100
+concept:01-definition-taxonomy/5-falsifiability-of-the-aae-proposal,concept,5. Falsifiability of the AAE proposal,,manuscript/01-definition-taxonomy.md:114
+concept:01-definition-taxonomy/6-limitations,concept,6. Limitations,,manuscript/01-definition-taxonomy.md:123
+concept:01-definition-taxonomy/references,concept,References,,manuscript/01-definition-taxonomy.md:127
+chapter:02-agentic-software-engineering,chapter,Chapter 02: Agentic Software Engineering,,manuscript/02-agentic-software-engineering.md
+concept:02-agentic-software-engineering/1-scope-and-terminology,concept,1. Scope and terminology,,manuscript/02-agentic-software-engineering.md:5
+open_question:02-agentic-software-engineering/L10,open_question,"2. ASE has two faces. Following Hassan et al.'s duality of ""SE for Humans"" and ""SE for Agents"" [@hassan2025agenticse] [P",OP,manuscript/02-agentic-software-engineering.md:10
+concept:02-agentic-software-engineering/2-a-short-history-of-the-task,concept,2. A short history of the task,,manuscript/02-agentic-software-engineering.md:12
+concept:02-agentic-software-engineering/3-the-core-task-and-how-it-is-scored,concept,3. The core task and how it is scored,,manuscript/02-agentic-software-engineering.md:28
+concept:02-agentic-software-engineering/4-families-of-ase-systems,concept,4. Families of ASE systems,,manuscript/02-agentic-software-engineering.md:39
+open_question:02-agentic-software-engineering/L41,open_question,We group systems by who decides the next step and how the agent touches the repository. The grouping is our own ; the sy,OP,manuscript/02-agentic-software-engineering.md:41
+concept:02-agentic-software-engineering/5-what-ase-agents-do-step-by-step,concept,"5. What ASE agents do, step by step",,manuscript/02-agentic-software-engineering.md:72
+concept:02-agentic-software-engineering/6-evaluation-what-the-benchmarks-do-and-do-not-tell-us,concept,6. Evaluation: what the benchmarks do and do not tell us,,manuscript/02-agentic-software-engineering.md:86
+open_question:02-agentic-software-engineering/L102,open_question,Successor benchmarks respond to some of these threats: SWE-bench Verified removes infeasible tasks [@chowdhury2024swever,OP,manuscript/02-agentic-software-engineering.md:102
+open_question:02-agentic-software-engineering/L111,open_question,6.3 What would a better ASE evaluation report?,OP,manuscript/02-agentic-software-engineering.md:111
+concept:02-agentic-software-engineering/7-human-roles-in-ase,concept,7. Human roles in ASE,,manuscript/02-agentic-software-engineering.md:115
+concept:02-agentic-software-engineering/8-safety-and-security-in-ase,concept,8. Safety and security in ASE,,manuscript/02-agentic-software-engineering.md:124
+concept:02-agentic-software-engineering/9-open-problems-specific-to-ase,concept,9. Open problems specific to ASE,,manuscript/02-agentic-software-engineering.md:132
+concept:02-agentic-software-engineering/references,concept,References,,manuscript/02-agentic-software-engineering.md:143
+chapter:03-agent-architectures,chapter,Chapter 03: Agent Architectures,,manuscript/03-agent-architectures.md
+open_question:03-agent-architectures/L5,open_question,"This chapter is a technical treatment of how LLM agents are structured: the execution loop, interleaved reasoning and ac",OP,manuscript/03-agent-architectures.md:5
+concept:03-agent-architectures/1-a-minimal-formal-model-of-the-agent-loop,concept,1. A minimal formal model of the agent loop,,manuscript/03-agent-architectures.md:7
+open_question:03-agent-architectures/L9,open_question,1.1 Notation,OP,manuscript/03-agent-architectures.md:9
+open_question:03-agent-architectures/L63,open_question,"We recommend reporting which style a system uses, because it changes what a ""success"" means.",OP,manuscript/03-agent-architectures.md:63
+concept:03-agent-architectures/2-reasoning-and-acting-react-and-its-relatives,concept,2. Reasoning and acting: ReAct and its relatives,,manuscript/03-agent-architectures.md:65
+concept:03-agent-architectures/3-planning-and-decomposition,concept,3. Planning and decomposition,,manuscript/03-agent-architectures.md:98
+open_question:03-agent-architectures/L114,open_question,"In software engineering the analogue of search is usually sampling several candidate patches and selecting among them, u",OP,manuscript/03-agent-architectures.md:114
+concept:03-agent-architectures/4-tool-use-and-the-agent-computer-interface,concept,4. Tool use and the agent-computer interface,,manuscript/03-agent-architectures.md:122
+concept:03-agent-architectures/5-memory-and-context,concept,5. Memory and context,,manuscript/03-agent-architectures.md:157
+concept:03-agent-architectures/6-multi-agent-setups,concept,6. Multi-agent setups,,manuscript/03-agent-architectures.md:184
+open_question:03-agent-architectures/L216,open_question,6.2 Why use several agents? Competing explanations,OP,manuscript/03-agent-architectures.md:216
+concept:03-agent-architectures/7-verification-loops,concept,7. Verification loops,,manuscript/03-agent-architectures.md:233
+open_question:03-agent-architectures/L235,open_question,Verification connects the architecture to correctness. We distinguish three loops :,OP,manuscript/03-agent-architectures.md:235
+concept:03-agent-architectures/8-putting-it-together-a-reference-architecture-op,concept,8. Putting it together: a reference architecture [OP],,manuscript/03-agent-architectures.md:255
+open_question:03-agent-architectures/L255,open_question,8. Putting it together: a reference architecture,OP,manuscript/03-agent-architectures.md:255
+concept:03-agent-architectures/9-cross-cutting-limitations,concept,9. Cross-cutting limitations,,manuscript/03-agent-architectures.md:279
+concept:03-agent-architectures/references,concept,References,,manuscript/03-agent-architectures.md:287
