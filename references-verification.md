@@ -15,11 +15,11 @@ Every entry in `references.bib` was verified on **2026-10-14** against the prima
 | 9 | `lewis2020rag` | PR | https://proceedings.neurips.cc/paper_files/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html | NeurIPS 2020 proceedings index; arXiv 2005.11401 |
 | 10 | `liu2024lost` | PR | https://doi.org/10.1162/tacl_a_00638 | Crossref: TACL 12:157–173, 2024; arXiv 2307.03172 abstract |
 | 11 | `park2023generative` | PR | https://doi.org/10.1145/3586183.3606763 | Crossref: UIST 2023, pp. 1–22; arXiv PDF §4.1 for retrieval formula |
-| 12 | `packer2023memgpt` | PP | https://arxiv.org/abs/2310.08560 | arXiv metadata; no venue found in Crossref search |
+| 12 | `packer2023memgpt` | PP | https://arxiv.org/abs/2310.08560 | arXiv metadata; no venue found in Crossref search; re-checked 2026-10-15: OpenReview only has the CoRR record |
 | 13 | `sumers2024coala` | PR | https://openreview.net/forum?id=1i6ZCvflQJ | TMLR accepted-papers list at jmlr.org/tmlr/papers (February 2024); arXiv 2309.02427v3 comment 'TMLR camera ready'; PDF read for memory types |
 | 14 | `wang2024survey` | PR | https://doi.org/10.1007/s11704-024-40231-1 | Crossref: Frontiers of Computer Science 18(6):186345, 2024 |
 | 15 | `wang2024codeact` | PR | https://proceedings.mlr.press/v235/wang24h.html | PMLR v235 index; arXiv 2402.01030 abstract |
-| 16 | `wu2023autogen` | PP | https://arxiv.org/abs/2308.08155 | arXiv metadata; venue NOT verified (COLM page check inconclusive; OpenReview blocked) |
+| 16 | `wu2023autogen` | PR | https://openreview.net/forum?id=BAakY1hNKS | COLM 2024, verified 2026-10-15 via OpenReview API (venueid colmweb.org/COLM/2024/Conference); ICLR 2024 main-track submission was rejected, also an ICLR 2024 LLMAgents workshop oral |
 | 17 | `hong2024metagpt` | PR | https://proceedings.iclr.cc/paper_files/paper/2024/hash/6507b115562bb0a305f1958ccc87355a-Abstract-Conference.html | ICLR 2024 proceedings index; arXiv 2308.00352 |
 | 18 | `qian2024chatdev` | PR | https://doi.org/10.18653/v1/2024.acl-long.810 | Crossref: ACL 2024 Long, pp. 15174–15186 |
 | 19 | `yang2024sweagent` | PR | https://proceedings.neurips.cc/paper_files/paper/2024/hash/5a7c947568c1b1328ccc5230172e1e7c-Abstract-Conference.html | NeurIPS 2024 proceedings page fetched; arXiv 2405.15793v3 PDF read |
@@ -33,7 +33,7 @@ Every entry in `references.bib` was verified on **2026-10-14** against the prima
 | 27 | `aleithan2024swebenchplus` | PP | https://arxiv.org/abs/2410.06992 | arXiv metadata and abstract |
 | 28 | `liang2025illusion` | PP | https://arxiv.org/abs/2506.12286 | arXiv metadata and abstract (v4) |
 | 29 | `deng2025swebenchpro` | PP | https://arxiv.org/abs/2509.16941 | arXiv metadata and abstract (v2) |
-| 30 | `yao2024taubench` | PP | https://arxiv.org/abs/2406.12045 | arXiv metadata and abstract; not found in ICLR 2025 proceedings index; venue not verified |
+| 30 | `yao2024taubench` | PR | https://proceedings.iclr.cc/paper_files/paper/2025/hash/1b126cc38b8638e07bef37e7b2bb72bf-Abstract-Conference.html | ICLR 2025, verified 2026-10-15 in the ICLR 2025 proceedings index (authors and title match) |
 | 31 | `kwa2025horizon` | PR | https://papers.nips.cc/paper_files/paper/2025/hash/85069585133c4c168c865e65d72e9775-Abstract-Conference.html | NeurIPS 2025 proceedings hash page and virtual poster 119302 (found via web search, content checked); arXiv 2503.14499 journal_ref |
 | 32 | `becker2025uplift` | PP | https://arxiv.org/abs/2507.09089 | arXiv metadata and abstract (v2) |
 | 33 | `hou2024llm4se` | PR | https://doi.org/10.1145/3695988 | Crossref: TOSEM 33(8):1–79, 2024 |
@@ -59,9 +59,8 @@ Every entry in `references.bib` was verified on **2026-10-14** against the prima
 
 ## Not yet verified (and therefore not cited as peer-reviewed)
 
-- **AutoGen** (`wu2023autogen`): peer-reviewed venue could not be confirmed from a primary page (OpenReview blocked automated access). Cited as a preprint.
-- **τ-bench** (`yao2024taubench`): not in the ICLR 2025 proceedings index; no other venue checked successfully. Cited as a preprint.
-- **MemGPT** (`packer2023memgpt`): no peer-reviewed venue found. Cited as a preprint.
+- **MemGPT** (`packer2023memgpt`): no peer-reviewed venue found (re-checked 2026-10-15 on OpenReview; DBLP blocked automated access). Cited as a preprint.
+- *Resolved 2026-10-15:* AutoGen → COLM 2024 (https://openreview.net/forum?id=BAakY1hNKS); τ-bench → ICLR 2025 (https://proceedings.iclr.cc/paper_files/paper/2025/hash/1b126cc38b8638e07bef37e7b2bb72bf-Abstract-Conference.html). The earlier note that τ-bench was missing from the ICLR 2025 index was wrong (title is indexed as `{$\tau$}-bench`).
 - **Review type** of the ICSE 2026 two-page item (`hassan2026icse`) and of the 2026 International Workshop on Agentic Engineering paper (`assalaarachchi2026agenticpm`): DOIs and proceedings verified; track and review process not verified.
 - **Frontier preprints** (items 2–11 of the October 2026 review): metadata verified, results **not** independently verified.
 - **Not cited at all** because we could not open a primary record during this session: practitioner pages about "agent engineering" (mentioned only as term usage, without citation), and an arXiv preprint on interactive requirement clarification seen in the scan (2610.13022), deferred.

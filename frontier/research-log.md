@@ -18,6 +18,7 @@ Chronological log of searches, verifications, and decisions. Times are Europe/Be
   - AutoGen (2308.08155): the venue could not be verified from a primary page, so it is cited as a preprint.
   - τ-bench (2406.12045): not found in the ICLR 2025 proceedings index; no other venue verified; cited as a preprint.
   - MemGPT (2310.08560): no venue found; preprint.
+  - *Update 2026-10-15:* AutoGen verified as COLM 2024 (OpenReview BAakY1hNKS) and τ-bench as ICLR 2025 (ICLR proceedings index); MemGPT remains a preprint. See references-verification.md.
   - Agentless: the arXiv title differs from the published FSE 2025 (PACMSE) title "Demystifying LLM-Based Software Engineering Agents"; cited by the published record with an arXiv cross-reference.
   - Hassan et al. ASE roadmap: the arXiv preprint (7 authors) and the ICSE 2026 two-page item (9 authors, DOI 10.1145/3774748.3776601) are different records; both kept, and the ICSE item is marked "review type unverified".
   - Kwa et al. (time horizons): arXiv journal_ref says NeurIPS 2025; confirmed on the NeurIPS 2025 virtual poster page and proceedings hash page. Author lists differ by one name (Chris Painter in arXiv v4 only), noted in BibTeX.
