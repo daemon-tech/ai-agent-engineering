@@ -4,6 +4,22 @@
 
 > **Status: v0.1.1, not peer reviewed.** Everything here is a working draft written on 2026-10-14. Claims are labelled by evidence class (see below). Terms, definitions, taxonomies, and hypotheses marked **[OP]** are *our proposals*, not established consensus.
 
+## Map
+
+Start with [manuscript/00-introduction.md](manuscript/00-introduction.md), then read the chapters in order. Every claim carries an evidence tag (table below).
+
+| Path | What it is |
+|---|---|
+| [manuscript/](manuscript/) | The text: chapters 00–03, read in order. |
+| [papers/](papers/) | Annotated paper entries and the pstack case study; index in [papers/README.md](papers/README.md). |
+| [notes/](notes/) | Working records: [open questions](notes/open-questions.md), [frontier review](notes/2026-10-frontier-review.md), [research log](notes/research-log.md), dated notes. |
+| [references.bib](references.bib) | The single bibliography (Pandoc keys, e.g. `[@yao2023react]`). |
+| [references-verification.md](references-verification.md) | How and when each reference was verified. |
+| [METHODOLOGY.md](METHODOLOGY.md) | Sourcing rules, evidence classes, review process, and how to contribute. |
+| [GLOSSARY.md](GLOSSARY.md) · [CHANGELOG.md](CHANGELOG.md) · [LICENSE](LICENSE) | Terms · changes · CC BY 4.0. |
+
+Agents: same rules as humans. Read METHODOLOGY §1–2 before editing, never cite a key that is not in `references.bib` + `references-verification.md`, and change things only through pull requests.
+
 ## Scientific mission
 
 Large language model (LLM) agents now edit repositories, run tests, open pull requests, and operate for hours with limited human supervision. The research describing them is spread across machine learning, software engineering, human-computer interaction, and security venues, and much of the practical knowledge lives in vendor blog posts and practitioner tooling that has never been evaluated.

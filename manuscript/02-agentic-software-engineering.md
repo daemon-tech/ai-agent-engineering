@@ -23,7 +23,7 @@ The task of turning an issue description into a correct patch existed long befor
 | Aug 2024 | SWE-bench Verified | Human-screened 500-task subset; benchmark validity becomes a first-class concern | [@chowdhury2024sweverified] **[VC]** |
 | Oct 2024 onward | SWE-bench Multimodal, SWE-Bench+, SWE-Gym | Beyond Python and text; audits of solution leakage; training environments | [@yang2025swebenchmm], [@pan2025swegym] **[PR]**; [@aleithan2024swebenchplus] **[PP]** |
 | 2025 | Time horizons, developer RCT, contamination probes, SWE-Bench Pro | Measurement shifts toward task length, real-world productivity, contamination resistance | [@kwa2025horizon] **[PR]**; [@becker2025uplift], [@liang2025illusion], [@deng2025swebenchpro] **[PP]** |
-| 2026 | SE 3.0 in TOSEM; audits of benchmarks and harnesses; maintenance and boundary studies | Discipline-level framing; evaluation reliability; long-horizon and safety concerns | [@hassan2026se3] **[PR]**; see [frontier review](../frontier/2026-10-frontier-review.md) **[PP]** |
+| 2026 | SE 3.0 in TOSEM; audits of benchmarks and harnesses; maintenance and boundary studies | Discipline-level framing; evaluation reliability; long-horizon and safety concerns | [@hassan2026se3] **[PR]**; see [frontier review](../notes/2026-10-frontier-review.md) **[PP]** |
 
 ## 3. The core task and how it is scored
 
@@ -81,7 +81,7 @@ Across the systems above, the same functional steps recur, implemented different
 6. **Iterate or select**: retry on failure, or generate several candidates and choose among them (Agentless's validation phase, SWE-Gym's verifiers).
 7. **Hand off**: present the change and its evidence to a human or a downstream system.
 
-Steps 3, 5, and 7 produce the **verification evidence**. Benchmarks score steps 4–6 indirectly through hidden tests. Step 7 is barely studied in the research literature, yet it is where practitioner workflows invest most effort (see the [pstack case study](../case-studies/pstack.md) **[EE]**). Hassan et al.'s proposed "Merge-Readiness Packs" are one attempt to name the hand-off artefact [@hassan2025agenticse] **[PP]**.
+Steps 3, 5, and 7 produce the **verification evidence**. Benchmarks score steps 4–6 indirectly through hidden tests. Step 7 is barely studied in the research literature, yet it is where practitioner workflows invest most effort (see the [pstack case study](../papers/pstack-case-study.md) **[EE]**). Hassan et al.'s proposed "Merge-Readiness Packs" are one attempt to name the hand-off artefact [@hassan2025agenticse] **[PP]**.
 
 ## 6. Evaluation: what the benchmarks do and do not tell us
 
@@ -138,7 +138,7 @@ Coding agents act on file systems, shells, networks, and credentials. Three Octo
 5. **Agentic versus pipeline designs.** When does autonomy pay for its cost and variance [@xia2025agentless] **[PR]**?
 6. **Harness maintenance.** Instruction files and skills change agent behaviour, but are they tested? [@giampieri2026cortex] **[PP]**
 
-These are developed with explicit resolution criteria in [agenda/open-questions.md](../agenda/open-questions.md).
+These are developed with explicit resolution criteria in [notes/open-questions.md](../notes/open-questions.md).
 
 ## References
 

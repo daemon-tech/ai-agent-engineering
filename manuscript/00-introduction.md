@@ -87,13 +87,13 @@ The notebook is a structured narrative review, not a systematic review. Its meth
 1. **Primary-source verification.** Every bibliographic field comes from the primary record. Peer-reviewed status was confirmed on the venue's own proceedings page or the publisher DOI, not from author comments. On 2026-10-14, OpenReview blocked automated access, so ICLR acceptances were confirmed through `proceedings.iclr.cc` and `iclr.cc/virtual`.
 2. **Evidence classes** [PR], [PUB], [PP], [VC], [EE], [OP] on every substantive claim.
 3. **Numbers with setup.** Every quoted number gives at least the benchmark split and model.
-4. **Dated frontier reviews.** Recent work is recorded with publication date, review date, mechanism, verification status, and limits ([frontier/](../frontier/)).
+4. **Dated frontier reviews.** Recent work is recorded with publication date, review date, mechanism, verification status, and limits ([notes/2026-10-frontier-review.md](../notes/2026-10-frontier-review.md)).
 
 We do not claim completeness, and the frontier scan for v0.1 covers one week of arXiv `cs.SE` submissions.
 
 ## 5. Challenges
 
-The following challenges recur across the literature we reviewed. Each is developed in later chapters and in the [research agenda](../agenda/open-questions.md).
+The following challenges recur across the literature we reviewed. Each is developed in later chapters and in the [research agenda](../notes/open-questions.md).
 
 ### 5.1 Benchmark validity
 
@@ -135,7 +135,7 @@ The manuscript relies heavily on abstracts and selected sections for the frontie
 
 ## 7. Conclusion
 
-LLM agents are now ordinary software engineering tools, but the knowledge about how to engineer them well is uneven in quality and scattered across communities. This notebook starts a careful consolidation. It verifies its sources, labels every claim, keeps our proposals distinct from established research, and treats benchmark numbers as measurements with setups rather than as rankings. Version 0.1 lays the foundation; the [research agenda](../agenda/open-questions.md) lists what would need to be learned for the AAE hypothesis to stand or fall.
+LLM agents are now ordinary software engineering tools, but the knowledge about how to engineer them well is uneven in quality and scattered across communities. This notebook starts a careful consolidation. It verifies its sources, labels every claim, keeps our proposals distinct from established research, and treats benchmark numbers as measurements with setups rather than as rankings. Version 0.1 lays the foundation; the [research agenda](../notes/open-questions.md) lists what would need to be learned for the AAE hypothesis to stand or fall.
 
 ## References
 

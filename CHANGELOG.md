@@ -2,6 +2,13 @@
 
 All notable changes to the AAE Research Notebook. Dates are Europe/Berlin.
 
+## [Unreleased]
+
+### Changed
+- Flatter layout: `notebook/`, `frontier/`, `agenda/` merged into `notes/`; `case-studies/pstack.md` moved to `papers/pstack-case-study.md`. Moved with history; all internal links updated.
+- CONTRIBUTING merged into METHODOLOGY §7 (its substantive-change rules duplicated METHODOLOGY §1, §2, §4).
+- README now opens with a one-table map of the repository.
+
 ## [0.1.1], 2026-10-15
 
 ### Added
