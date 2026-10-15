@@ -43,40 +43,6 @@ Every substantive claim carries one of these tags. Full definitions are in [METH
 
 Citations use Pandoc style, e.g. `[@yao2023react]`, and resolve against the single [references.bib](references.bib). The verification record for every entry is in [references-verification.md](references-verification.md).
 
-## Structure
-
-```
-.
-├── README.md                     you are here
-├── METHODOLOGY.md                sourcing rules, evidence classes, review process
-├── CONTRIBUTING.md               how to propose questions, papers, and changes
-├── GLOSSARY.md                   terms, with established vs. proposed status
-├── CHANGELOG.md
-├── references.bib                the only bibliography
-├── references-verification.md   how and when each entry was verified
-├── manuscript/
-│   ├── 00-introduction.md        academically structured introduction
-│   ├── 01-definition-taxonomy.md proposed definition and taxonomy of AAE [OP]
-│   ├── 02-agentic-software-engineering.md
-│   └── 03-agent-architectures.md technical chapter
-├── papers/                       annotated entries for individual works
-├── case-studies/                 engineering-experience case studies
-├── frontier/                     dated frontier reviews and the research log
-├── agenda/open-questions.md      the research agenda
-└── notebook/                     dated research notes
-```
-
-Suggested reading order: `00-introduction` → `01-definition-taxonomy` → `02-agentic-software-engineering` → `03-agent-architectures`, then `papers/`, `case-studies/`, and `agenda/`.
-
-## Status
-
-| Item | State |
-|---|---|
-| Version | v0.1 (2026-10-14) |
-| Peer review | **None.** No external reviewer has read this material. |
-| Citations | 52 BibTeX entries, each verified against a primary source on 2026-10-14 |
-| Known gaps | See "Not yet verified" in [references-verification.md](references-verification.md) and the open questions in [agenda/](agenda/open-questions.md) |
-
 ## License (suggestion, not yet decided)
 
 We **suggest** licensing the text under **Creative Commons Attribution 4.0 International (CC BY 4.0)**, which allows reuse with attribution and suits a scientific manuscript. Any code snippets could additionally be placed under a permissive software license such as MIT. **No LICENSE file is included yet; the maintainer (0xDaemon) has to decide.** Until a license is added, default copyright applies.
