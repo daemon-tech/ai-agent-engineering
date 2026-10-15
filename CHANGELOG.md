@@ -13,6 +13,9 @@ All notable changes to the AAE Research Notebook. Dates are Europe/Berlin.
 
 ### Added
 - `LICENSE`: Creative Commons Attribution 4.0 International (CC BY 4.0).
+- `LICENSE-CODE`: MIT for code snippets (text stays CC BY 4.0).
+- `CITATION.cff` (author Sam / 0xDaemon).
+- Authorship and AI-assistance disclosure in README; `notes/reviewers.md` (how to find external reviewers).
 - Repository published at https://github.com/daemon-tech/ai-agent-engineering (public).
 
 ### Changed

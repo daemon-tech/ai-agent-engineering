@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "AAE Research Notebook"
+type: software
+authors:
+  - alias: "0xDaemon"
+    given-names: "Sam"
+version: "0.1.1"
+date-released: "2026-10-15"
+license:
+  - CC-BY-4.0
+  - MIT
+repository-code: "https://github.com/daemon-tech/ai-agent-engineering"
+url: "https://github.com/daemon-tech/ai-agent-engineering"
+abstract: "Research notebook on AI agent engineering. Not peer reviewed. Text CC BY 4.0; code snippets MIT (LICENSE-CODE)."

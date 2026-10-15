@@ -131,7 +131,7 @@ AAE overlaps with several existing efforts. "Agentic Software Engineering" and "
 
 ### 6.3 Limitations of this manuscript
 
-The manuscript relies heavily on abstracts and selected sections for the frontier items, which are first-version preprints that are days old. It has not been externally reviewed. Its authors practise what it studies.
+The manuscript relies heavily on abstracts and selected sections for the frontier items, which are first-version preprints that are days old. It has not been externally reviewed. Its author, Sam (0xDaemon), practises what it studies: AI agents assisted with research, drafting, and verification (see the README).
 
 ## 7. Conclusion
 
