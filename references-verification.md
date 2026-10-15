@@ -39,8 +39,8 @@ Every entry in `references.bib` was verified on **2026-10-14** against the prima
 | 33 | `hou2024llm4se` | PR | https://doi.org/10.1145/3695988 | Crossref: TOSEM 33(8):1–79, 2024 |
 | 34 | `hassan2026se3` | PR | https://doi.org/10.1145/3807901 | Crossref: TOSEM 35(9):1–25, issued 2026-08-21; arXiv 2410.06107 |
 | 35 | `hassan2025agenticse` | PP | https://arxiv.org/abs/2509.06216 | arXiv metadata and abstract (v3, 7 authors) |
-| 36 | `hassan2026icse` | published, review type unverified | https://doi.org/10.1145/3774748.3776601 | Crossref: ICSE 2026 proceedings, pp. 22–23 (9 authors); track not verified |
-| 37 | `assalaarachchi2026agenticpm` | published, review type unverified | https://doi.org/10.1145/3786167.3788409 | Crossref: Proc. 2026 International Workshop on Agentic Engineering, pp. 157–164 |
+| 36 | `hassan2026icse` | PUB | https://doi.org/10.1145/3774748.3776601 | Crossref: ICSE-Companion '26, pp. 22–23 (9 authors); track not verified |
+| 37 | `assalaarachchi2026agenticpm` | PUB | https://doi.org/10.1145/3786167.3788409 | Crossref: AGENT '26 (Proc. 2026 International Workshop on Agentic Engineering), pp. 157–164 |
 | 38 | `zhou2026externalization` | PP | https://arxiv.org/abs/2604.08224 | arXiv metadata |
 | 39 | `guo2026harness` | PP | https://arxiv.org/abs/2606.20683 | arXiv metadata |
 | 40 | `anthropic2024effective` | VC | https://www.anthropic.com/engineering/building-effective-agents | Vendor page fetched: 'Published Dec 19, 2024'; byline from page |

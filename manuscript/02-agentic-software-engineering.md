@@ -6,7 +6,7 @@
 
 **Agentic Software Engineering (ASE)** is the term we use for software engineering in which LLM agents carry out multi-step engineering tasks, such as localising a defect, editing code, running tests, and preparing a change for review, with some autonomy. Two things should be said at the outset.
 
-1. **The term is not ours.** Hassan et al. use "Agentic Software Engineering" and equate it with "SE 3.0", describing "a new era where intelligent agents are tasked not with simple code generation, but with achieving complex, goal-oriented SE objectives" [@hassan2025agenticse] **[PP]**. A two-page version appears in the ICSE 2026 proceedings [@hassan2026icse]. The broader SE 3.0 vision ("AI-native", "intent-centric, conversation-oriented development") is published in TOSEM [@hassan2026se3] **[PR]**. A 2026 International Workshop on Agentic Engineering has ACM-published proceedings, including, for example, a vision for agentic software project management [@assalaarachchi2026agenticpm]; we did not verify its parent conference or review process.
+1. **The term is not ours.** Hassan et al. use "Agentic Software Engineering" and equate it with "SE 3.0", describing "a new era where intelligent agents are tasked not with simple code generation, but with achieving complex, goal-oriented SE objectives" [@hassan2025agenticse] **[PP]**. A two-page version appears in the ICSE 2026 proceedings [@hassan2026icse] **[PUB]**. The broader SE 3.0 vision ("AI-native", "intent-centric, conversation-oriented development") is published in TOSEM [@hassan2026se3] **[PR]**. A 2026 International Workshop on Agentic Engineering has ACM-published proceedings, including, for example, a vision for agentic software project management [@assalaarachchi2026agenticpm] **[PUB]**; we did not verify its parent conference or review process.
 2. **ASE has two faces.** Following Hassan et al.'s duality of "SE for Humans" and "SE for Agents" [@hassan2025agenticse] **[PP]**, ASE covers both (a) using agents to do software engineering and (b) re-engineering software engineering itself (its processes, tools, artefacts, and roles) so that agents can participate safely. The AAE notebook studies both, and frames (b) as layers L4–L5 of the taxonomy in Chapter 01 **[OP]**.
 
 ## 2. A short history of the task
@@ -61,7 +61,7 @@ The Agentless result is important for AAE because it shows that *more autonomy i
 
 - **ChatDev** organises role-specialised agents through a "chat chain" for design, coding, and testing, with "communicative dehallucination" [@qian2024chatdev] **[PR]**.
 - **MetaGPT** encodes Standardised Operating Procedures into prompt sequences and assigns roles in an "assembly line paradigm" [@hong2024metagpt] **[PR]**.
-- **AutoGen** is a general framework for conversing agents, used among other things for coding [@wu2023autogen] **[PP]**.
+- **AutoGen** is a general framework for conversing agents, used among other things for coding [@wu2023autogen] **[PR]**.
 
 These systems were mostly evaluated on generating new, relatively small programs rather than on modifying large existing repositories. How well role-based decomposition works for repository-scale maintenance is an open question (agenda, Q6).
 
@@ -104,9 +104,9 @@ Successor benchmarks respond to some of these threats: SWE-bench Verified remove
 ### 6.2 Beyond resolve rates
 
 - **Time horizons.** Kwa et al. measure the length of tasks (in human time) an agent completes with 50% success. They report that horizons on their 170-task suite doubled roughly every seven months from 2019 to 2025, and they discuss the external-validity limits explicitly [@kwa2025horizon] **[PR]**.
-- **Reliability across trials.** τ-bench introduced pass^k, the probability that all *k* independent trials succeed, and found pass^8 below 25% in its retail domain for the agents tested [@yao2024taubench] **[PP]**. Although τ-bench is not an SE benchmark, the metric applies directly to ASE, where a user may need the agent to succeed every time rather than once.
+- **Reliability across trials.** τ-bench introduced pass^k, the probability that all *k* independent trials succeed, and found pass^8 below 25% in its retail domain for the agents tested [@yao2024taubench] **[PR]**. Although τ-bench is not an SE benchmark, the metric applies directly to ASE, where a user may need the agent to succeed every time rather than once.
 - **Real-world productivity.** In an RCT with 16 experienced developers on 246 tasks in their own mature projects, allowing AI tools (primarily Cursor Pro with Claude 3.5/3.7 Sonnet) increased completion time by 19%, contrary to developers' own forecast and post-hoc estimate [@becker2025uplift] **[PP]**. The study's setting (very experienced developers, large mature projects, early-2025 tools) limits generalisation in both directions.
-- **Maintenance cost.** The SWE-Maintain study reports a 5.6-point average drop in later-task resolution when starting from agent-written history rather than developer-written history, rising to 14.0 points when all earlier tests must also pass. The cost disappears when the inherited code passes earlier tests [@pan2026maintain] **[PP]**.
+- **Maintenance cost.** The SWE-Maintain study reports a 5.6-point average drop in later-task resolution when starting from agent-written history rather than developer-written history, rising to 14.0 points when all earlier tests must also pass. When the inherited code passes all earlier tests and the next task is not already solved, there is no measurable disadvantage (+2.7 points, 95% CI −0.5 to +6.1) [@pan2026maintain] **[PP]**.
 
 ### 6.3 What would a better ASE evaluation report? [OP]
 

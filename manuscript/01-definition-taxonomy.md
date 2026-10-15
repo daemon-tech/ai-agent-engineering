@@ -61,9 +61,9 @@ flowchart TB
 | **L0 Environment** | What the agent acts on and observes; sandboxes; reproducible environments | Containerised SWE-bench harness [@chowdhury2024sweverified] **[VC]**; synthesised training environments [@pan2025swegym] **[PR]** |
 | **L1 Model policy** | The model's action-selection behaviour as shaped by prompting or fine-tuning | ReAct prompting [@yao2023react] **[PR]**; CodeActInstruct fine-tuning [@wang2024codeact] **[PR]** |
 | **L2 Harness** | Loop, action space, tool interfaces, context construction, memory, permissions | Agent-computer interface [@yang2024sweagent] **[PR]**; MemGPT memory tiers [@packer2023memgpt] **[PP]**; MCP [@mcp2026spec] **[VC]** |
-| **L3 Coordination** | Multiple agents, roles, communication, shared artefacts | ChatDev [@qian2024chatdev] **[PR]**; MetaGPT [@hong2024metagpt] **[PR]**; AutoGen [@wu2023autogen] **[PP]** |
+| **L3 Coordination** | Multiple agents, roles, communication, shared artefacts | ChatDev [@qian2024chatdev] **[PR]**; MetaGPT [@hong2024metagpt] **[PR]**; AutoGen [@wu2023autogen] **[PR]** |
 | **L4 Oversight and delegation** | Where humans approve, review, or intervene; evidence handed to humans | ACE/AEE workbenches proposed in [@hassan2025agenticse] **[PP]**; practitioner decision logs [@tan2026pstack] **[EE]** |
-| **L5 Organisation and governance** | Team processes, accountability, policy, regulation | Agentic project-management vision [@assalaarachchi2026agenticpm] |
+| **L5 Organisation and governance** | Team processes, accountability, policy, regulation | Agentic project-management vision [@assalaarachchi2026agenticpm] **[PUB]** |
 
 The layering is a proposal. Its claim is that design decisions at each layer can be studied somewhat independently, and that a reported result should state the configuration of every layer.
 
@@ -88,7 +88,7 @@ Domains differ in how strong and how available their verification signals are. W
 | Software engineering (ASE) | compilers, type checkers, tests, linters, reproduction scripts, running the application | Medium to high, but tests can be weak or over-specific [@aleithan2024swebenchplus] **[PP]** | Often yes |
 | Data analysis | recomputation, invariants, cross-checks | Medium | Often yes |
 | Web and GUI tasks | page state, screenshots, task-specific checkers | Low to medium | Partially |
-| Customer-facing dialogue | policy rules, user satisfaction, database end state | Low to medium [@yao2024taubench] **[PP]** | Rarely |
+| Customer-facing dialogue | policy rules, user satisfaction, database end state | Low to medium [@yao2024taubench] **[PR]** | Rarely |
 | Research and writing | source verification, peer review | Low, slow | Partially |
 
 **Hypothesis H1 [OP].** Agent reliability in a domain is bounded by the strength and availability of its verification signals more than by model capability alone. ASE is the natural starting domain because its profile is comparatively strong. This hypothesis is consistent with, but not established by, SWE-agent's finding that an editing guardrail (a linter that blocks syntactically invalid edits) improved performance [@yang2024sweagent] **[PR]**.

@@ -2,7 +2,7 @@
 
 **AI Agent Engineering (AAE): a living manuscript, technical encyclopedia, literature review, and research notebook.**
 
-> **Status: v0.1, not peer reviewed.** Everything here is a working draft written on 2026-10-14. Claims are labelled by evidence class (see below). Terms, definitions, taxonomies, and hypotheses marked **[OP]** are *our proposals*, not established consensus.
+> **Status: v0.1.1, not peer reviewed.** Everything here is a working draft written on 2026-10-14. Claims are labelled by evidence class (see below). Terms, definitions, taxonomies, and hypotheses marked **[OP]** are *our proposals*, not established consensus.
 
 ## Scientific mission
 
@@ -36,19 +36,20 @@ Every substantive claim carries one of these tags. Full definitions are in [METH
 | Tag | Class | Meaning |
 |---|---|---|
 | **[PR]** | Peer-reviewed | Published at a peer-reviewed venue that we verified (proceedings page, publisher DOI, or journal page). |
-| **[PP]** | Preprint | Available on arXiv or similar, with no verified peer-reviewed publication. |
+| **[PUB]** | Published, review type unverified | In proceedings or a journal (verified DOI/publisher record), but we could not verify that it was peer reviewed (e.g. companion or workshop items). |
+| **[PP]** | Preprint | Available on arXiv or similar, with no verified publication. |
 | **[VC]** | Vendor claim | Stated by a company about its own product, benchmark, or practice. |
 | **[EE]** | Engineering experience | Practitioner reports, tooling, and documentation that describe practice without controlled evaluation. |
 | **[OP]** | Our proposal or hypothesis | Terms, definitions, taxonomies, conjectures, and frameworks introduced in this notebook. |
 
 Citations use Pandoc style, e.g. `[@yao2023react]`, and resolve against the single [references.bib](references.bib). The verification record for every entry is in [references-verification.md](references-verification.md).
 
-## License (suggestion, not yet decided)
+## License
 
-We **suggest** licensing the text under **Creative Commons Attribution 4.0 International (CC BY 4.0)**, which allows reuse with attribution and suits a scientific manuscript. Any code snippets could additionally be placed under a permissive software license such as MIT. **No LICENSE file is included yet; the maintainer (0xDaemon) has to decide.** Until a license is added, default copyright applies.
+The text is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**; see [`LICENSE`](LICENSE). Reuse is permitted with attribution. The repository is public at https://github.com/daemon-tech/ai-agent-engineering.
 
 Third-party material quoted here (short attributed quotations only) remains under its original license. The pstack case study quotes an MIT-licensed project.
 
 ## How to cite
 
-Until a versioned release exists, cite as: *0xDaemon et al., "AAE Research Notebook", v0.1, 2026-10-14, not peer reviewed.* A `CITATION.cff` should be added once the repository is public and the license is chosen.
+Until a versioned release exists, cite as: *0xDaemon et al., "AAE Research Notebook", v0.1.1, 2026-10-15, not peer reviewed.* A `CITATION.cff` is still to be added.

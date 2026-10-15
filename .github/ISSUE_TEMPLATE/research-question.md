@@ -11,7 +11,7 @@ labels: research-question
 
 ## What is known
 
-<!-- Cite primary sources with BibTeX keys or links, and tag each claim: [PR] peer-reviewed, [PP] preprint, [VC] vendor claim, [EE] engineering experience, [OP] our proposal. -->
+<!-- Cite primary sources with BibTeX keys or links, and tag each claim: [PR] peer-reviewed, [PUB] published (review type unverified), [PP] preprint, [VC] vendor claim, [EE] engineering experience, [OP] our proposal. -->
 
 ## What is uncertain
 

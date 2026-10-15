@@ -17,14 +17,15 @@ This document describes how sources enter the notebook, how claims are labelled,
 | Tag | Class | Inclusion criterion | How to read it |
 |---|---|---|---|
 | **[PR]** | Peer-reviewed | Listed on a verified peer-reviewed venue's proceedings or publisher record. | Has passed a review process. It is still not necessarily replicated or correct. |
-| **[PP]** | Preprint | Public manuscript without verified peer-reviewed publication. | Has not been reviewed. Treat findings as provisional. |
+| **[PUB]** | Published, review type unverified | Verified publisher record (DOI) in proceedings or a journal, but track or review process not verified. | Formally published, but not evidence of a reviewed empirical result. |
+| **[PP]** | Preprint | Public manuscript without verified publication. | Has not been reviewed. Treat findings as provisional. |
 | **[VC]** | Vendor claim | A company describing its own product, benchmark, or internal practice. | May be accurate, but the incentive to present results favourably is structural. Usually not independently reproducible. |
 | **[EE]** | Engineering experience | Practitioner tooling, documentation, talks, or reports without controlled evaluation. | Valuable for hypotheses and practice. It is not evidence of effect size or generality. |
 | **[OP]** | Our proposal or hypothesis | Introduced in this notebook. | A conjecture to be tested. Never a finding. |
 
 Two edge cases appear in v0.1:
 
-- **Published, review type unverified.** Two items appear in ACM proceedings (a two-page item in the ICSE 2026 proceedings and a paper in the proceedings of the 2026 International Workshop on Agentic Engineering) where we verified the DOI and proceedings but not the track or review process. BibTeX marks them `published-review-type-unverified`; the text treats them as published but not as evidence of a reviewed empirical result.
+- **Published, review type unverified.** Two items appear in ACM proceedings (a two-page item in the ICSE-Companion '26 proceedings and a paper in the proceedings of the 2026 International Workshop on Agentic Engineering) where we verified the DOI and proceedings but not the track or review process. BibTeX marks them `published-review-type-unverified`; the text tags them **[PUB]** (since v0.1.1).
 - **Same work, different records.** When a preprint and a peer-reviewed version differ in title or authors (e.g., Agentless, Hassan et al.'s ASE roadmap), we cite the version we actually read and say so.
 
 ### Evidence grading within a source

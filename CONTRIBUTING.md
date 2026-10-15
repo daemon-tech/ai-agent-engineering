@@ -19,7 +19,7 @@ A change is *substantive* if it adds or alters a claim, a number, a citation, a 
 
 1. **Must cite primary sources.** Use the arXiv abstract page or API, publisher DOI, official proceedings page, ACL Anthology, OpenReview, or the vendor's own page. Never cite from memory, search snippets, or aggregators.
 2. **Must add or update `references.bib` and `references-verification.md`.** Every new key needs a verification row saying how and when it was checked.
-3. **Must tag evidence.** Use [PR], [PP], [VC], [EE], or [OP] (see [METHODOLOGY.md](METHODOLOGY.md)). Never present a preprint as peer-reviewed; check the venue's own listing.
+3. **Must tag evidence.** Use [PR], [PUB], [PP], [VC], [EE], or [OP] (see [METHODOLOGY.md](METHODOLOGY.md)). Never present a preprint or a [PUB] item as peer-reviewed; check the venue's own listing.
 4. **Must quote numbers with setup**: benchmark, split, model, and where possible budget and date.
 5. **Must keep proposals separate.** New terms, frameworks, or hypotheses are tagged [OP] and placed where readers expect proposals.
 6. **Must keep quotations brief and attributed.**
@@ -53,4 +53,4 @@ AI-assisted contributions are welcome and must be disclosed in the PR. They are 
 
 ## Code of conduct
 
-Be precise, be kind, and attack claims rather than people. A formal code of conduct can be adopted once the repository is public.
+Be precise, be kind, and attack claims rather than people. A formal code of conduct is still to be adopted.
